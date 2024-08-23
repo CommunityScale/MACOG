@@ -452,7 +452,10 @@ a:hover {
   text-decoration: underline;
 }
 
-
+/* Target specific elements you jump to, such as headings */
+h2, h3, .section-title {
+  scroll-margin-top: 80px; /* Adjust this value based on your sticky header height */
+}
 
 
 /* Images

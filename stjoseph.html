@@ -28,6 +28,11 @@
 	<meta name="twitter:creator" content="@CommunityScale">
 	<meta http-equiv="content-language" content="en">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +40,7 @@
 	<!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/cs.css">
+	<link rel="stylesheet" href="css/cs-template.css">
 
 	<!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -50,14 +55,37 @@
 
 	<!-- Sticky header -->
 	<div class="sticky">
-		<div class="container">
-			<p class="inline-text">
-					<a href="https://www.macog.com/" target="_blank"><img src="images/community.png" alt="MACOG" class="inline-image"></a>
-					<span class="title"><b>St. Joseph County HNA |</span></b><a href="#People"> People </a>| <a href="#Place">Place </a>| <a href="#Demand">Demand </a>| <a href="http://communityscale.github.io/MACOG/index.html"> Back to Regional Dashboard</a></p>
+		<div class="topnav">
+			<div class="logo-and-menu">
+				<p class="inline-text">
+					<img src="images/community.png" alt="MACOG" class="inline-image">
+					<span class="title">St. Joseph County HNA</span>
+				</p>
+				<div class="nav-options">
+					<div class="desktop-pages">
+						<!-- Links must be added here for desktop -->
+						<a href="#People">People</a>
+						<a href="#Place">Place</a>
+						<a href="#Demand">Demand</a>
+						<a href="http://communityscale.github.io/MACOG/index.html">Back to Regional Dashboard</a>
+					</div>
+					<div id="clickDiv" class="mobile-menu-icon">
+						<a class="menu-icon">
+							<i class="fa fa-bars"></i>
+						  </a>
+					</div>
+				</div>
+				
 			</div>
+			<div id="targetDiv" class="">
+				<!-- Links must be added here again for mobile -->
+				<a href="#People">People</a>
+				<a href="#Place">Place</a>
+				<a href="#Demand">Demand</a>
+				<a href="http://communityscale.github.io/MACOG/index.html">Back to Regional Dashboard</a>
+			</div>
+		</div>
 	</div>
-
-
 
 	<!-- Cover banner -->
 
@@ -66,22 +94,10 @@
 			<h1>St. Joseph County
 				<br>Housing Needs Assessment
 			</h1>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div class="twelve columns" style="margin-top: 20px">
-				<p>This dashboard was created by <a href="http://communityscale.io">CommunityScale</a> for <a href="https://www.macog.com/">MACOG</a> (Michiana Area Council of Governments) to summarize the Housing Needs Assessment for St. Joseph County as prepared to support MACOG's overall <a href="http://communityscale.io/MACOG/index.html">Regional Housing Study</a>.</p>
-			</div>
-		</div>
-	</div>
-
-	<!-- Divider row -->
-	<div class="divider">
-		<div class="container">
-			<div class="Twelve columns">
-				<h2 id="Overview" class="inline-text"><img src="images/Overview.png" class="inline-image" title="Overview">Overview</h2>
+			<div class="row">
+				<div class="eight columns" style="margin-top: 20px">
+					<p>This dashboard was created by <a href="http://communityscale.io">CommunityScale</a> for <a href="https://www.macog.com/">MACOG</a> (Michiana Area Council of Governments) to summarize the Housing Needs Assessment for St. Joseph County as prepared to support MACOG's overall <a href="http://communityscale.io/MACOG/index.html">Regional Housing Study</a>.</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -89,15 +105,11 @@
 	<!-- Header row -->
 	<div class="container">
 		<div class="row">
-			<div class="twelve columns" style="margin-top: 2%">
-				<h3>St. Joseph County Housing Needs Assessment</h3>
-			</div>
-		</div>
-		<div class="row">
 			<div class="six columns" style="margin-top: 2%">
 				<p><img src="./images/St Joseph_MISHAWAKACITYVIEWDOWNTOWN.png" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
 			</div>
 			<div class="six columns" style="margin-top: 2%">
+				<h4>St. Joseph County Housing Needs Assessment</h4>
 				<p>A foundational component of MACOG's Regional Housing Plan, this Housing Needs Assessment is the result of extensive quantitative data analysis and stakeholder engagement to understand housing needs and opportunties in St. Joseph County.</p>
 				<p>This Housing Needs Assessment document is also availble in a much more detailed, downloadable pdf format:</p>
 				<p><a href="https://docs.google.com/presentation/d/1ETygfjT1A8HVTVHljzS3ZVY1i1tSC-SPGaQuYYkl9TQ/edit?usp=drive_link" target="blank"><button>St. Joseph County Report</button></a></p>
@@ -116,37 +128,49 @@
 		</div>
 	</div>
 
-	<div class="divider">
+	<div class="divider" id="People" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/people-background.jpg); background-repeat: no-repeat; background-size: cover">
 		<div class="container">
-			<div class="Twelve columns">
-				<h2 id="People" class="inline-text"><img src="images/People.png" class="inline-image" title="People">People</h2>
+			<div class="twelve columns center-align">
+				<div class="divider-header"></div>
+					<div class="divider-icon">
+						<img src="images/theme/People.svg" class="inline-image" title="People">
+					</div>
+					<h2 class="inline-text">People</h2>
+				<h5>The following section profiles the people of St. Joseph County, detailing characteristics such as income, household structure, and cost burden. These indicators combine to describe the local population's housing needs and preferences which inform this report's recommended strategies for new housing production to meet demand and fill gaps in affordability and attainability.</h5>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="row">
-			<div class="twelve columns" style="margin-top: 2%">
-				<p>The following section profiles the people of St. Joseph County, detailing characteristics such as income, household structure, and cost burden. These indicators combine to describe the local population's housing needs and preferences which inform this report's recommended strategies for new housing production to meet demand and fill gaps in affordability and attainability.</p>
-				<h3>St. Joseph County's population is growing older.</h3>
-				<p>St. Joseph County’s population has been aging over the past decade, with the 65+ age group growing faster than other groups and projected to outpace others into the future. In general, younger households are more likely to prefer family-oriented housing and neighborhoods where as older households may have a broader range of preferences and priorities, including senior options.</p>
+		<div class="row section">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>St. Joseph County's population is growing older</h3>
 			</div>
 		</div>
-		<div class="row">
-			<div class="eight columns" style="margin-top: 2%">
-				<h5>The 65+ age cohort is projected to grow fastest over the next decade, becoming a significantly larger share of the population..</h5>
-				<iframe title="" aria-label="Interactive area chart" id="datawrapper-chart-D8dgw" src="https://datawrapper.dwcdn.net/D8dgw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="388" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-				</script>	
+	
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>The 65+ age cohort is projected to grow fastest over the next decade, becoming a significantly larger share of the population.</h4>
 			</div>
-			<div class="four columns" style="margin-top: 2%">
-				<h5>65+ leads net new household growth between 2024-34</h5>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Interactive area chart" id="datawrapper-chart-D8dgw" src="https://datawrapper.dwcdn.net/D8dgw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="388" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+					</script>	
+				<figcaption>
+					This chart illustrates trends in population by age cohort, both historic and projected. The projection is based on recent trends extended. Depending on economic, policy, and other conditions, the future age distribution may vary over time.
+				</figcaption>
+			</div>
+		</div>
+	
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>65+ leads net new household growth between 2024-34</h4>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
 				<iframe title="" aria-label="Column Chart" id="datawrapper-chart-fHkGM" src="https://datawrapper.dwcdn.net/fHkGM/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="376" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
 				</script>
-			</div>
-		</div>
-		<div class="row">
-			<div class="twelve columns" style="margin-top: 2%">
-				<p>The chart at left illustrates trends in population by age cohort, both historic and projected. The projection is based on recent trends extended. Depending on economic, policy, and other conditions, the future age distribution may vary over time. The chart at right summarizes net household change by age group.</p>
+				<figcaption>
+					This chart summarizes net household change by age group.
+				</figcaption>
 			</div>
 		</div>
 	</div>
@@ -982,26 +1006,28 @@
 				<p><img src="./images/St Joseph production chart.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
 			</div>
 		</div>
-
-	<div class="row">
-		<hr>
 	</div>
 
-	<div class="container">
-		<div class="unresponsive">
-			<div class="content-size"><a href="https://www.macog.com/" target="_blank"><img src="./images/community.png" height=auto width=30px title="FRCOG" alt="FRCOG"></a></div>
-			<div class="fill-space">
-				<p class="small-text"><a href="https://www.macog.com/" target="_blank">The Michiana Area Council of Governments (MACOG)</a> is a voluntary organization of local governments that studies and attempts to resolve areas of interlocal issues.</p>
+	<div class="footer">
+		<div class="container">
+			<div class="unresponsive" style="margin-bottom: 30px;">
+				<a href="https://www.macog.com/" target="_blank"><img src="./images/community.png" height=auto width=30px title="FRCOG" alt="FRCOG"></a>
+				<div class="fill-space">
+					<p class="small-text"><a href="https://www.macog.com/" target="_blank">The Michiana Area Council of Governments (MACOG)</a> is a voluntary organization of local governments that studies and attempts to resolve areas of interlocal issues.</p>
+				</div>
 			</div>
-		</div>
-
-		<div class="unresponsive">
-			<div class="content-size"><a href="http://communityscale.io"><img src="./images/CommunityScale-logo.png" height=auto width=30px title="CommunityScale" alt="CommunityScale"></a></div>
-			<div class="fill-space">
-				<p class="small-text"><a href="http://communityscale.io">CommunityScale</a> is a pioneering urban planning and spatial data analysis company serving clients across the United States. <br> Follow CommunityScale on <a href="https://www.linkedin.com/company/communityscale">LinkedIn</a> and <a href="https://twitter.com/CommunityScale">Twitter/X</a> <br>This dashboard is <a href="https://github.com/CommunityScale/FRCOG">open source</a> MIT license - 2024 CommunityScale</p>
+	
+			<div class="unresponsive">
+				<a href="http://communityscale.io"><img src="./images/CommunityScale-logo.png" height=auto width=30px title="CommunityScale" alt="CommunityScale"></a>
+				<div class="fill-space">
+					<p class="small-text"><a href="http://communityscale.io">CommunityScale</a> is a pioneering urban planning and spatial data analysis company serving clients across the United States. <br> Follow CommunityScale on <a href="https://www.linkedin.com/company/communityscale">LinkedIn</a> and <a href="https://twitter.com/CommunityScale">Twitter/X</a> <br>This dashboard is <a href="https://github.com/CommunityScale/FRCOG">open source</a> MIT license - 2024 CommunityScale</p>
+				</div>
 			</div>
 		</div>
 	</div>
+	
+
+	<script type="text/javascript" src="nav-javascript.js"></script>
 
 	<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

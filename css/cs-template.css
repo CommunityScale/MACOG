@@ -143,6 +143,18 @@ Table of contents
   text-align: left;
 }
 
+.insight-box {
+  background-color: #FFFFFF;
+  padding: 25px;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 1px 3px #EAEAEA ;
+}
+
+.insight-box .columns {
+  margin-left: 2%;
+}
+
 /* Progress tracker section */
 .progress-tracker {
   background: #383F45;
@@ -712,9 +724,8 @@ a:hover {
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 14px 12px;
   text-decoration: none;
-  font-size: 17px;
   display: block;
   border-radius: 3px;
   text-align: center;
@@ -948,10 +959,10 @@ label>.label-body {
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 ul {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 
 li,

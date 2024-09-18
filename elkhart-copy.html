@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Metadata 2024 -->
+	<meta charset="utf-8">
+	<title>Elkhart County Housing Needs Assessment</title>
+	<meta name="description" content="Explore our interactive dashboard to understand housing needs in MACOG. This tool provides insights into housing availability, affordability, and trends.">
+	<meta name="keywords" content="MACOG, Housing, Urban Planning, CommunityScale, Assessment, Dashboard">
+	<meta name="author" content="CommunityScale">
+	<link rel="canonical" href="https://communityscale.github.io/MACOG/">
+	<meta property="og:title" content="MACOG Housing Study Dashboard">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://communityscale.github.io/MACOG/">
+	<meta property="og:image" content="https://raw.githubusercontent.com/CommunityScale/MACOG/main/images/socialcard.jpg">
+	<meta property="og:description" content="Housing Study educational dashboard for MACOG. Provides detailed analysis and insights on housing trends, affordability, and needs.">
+	<meta property="og:site_name" content="CommunityScale">
+	<meta property="og:locale" content="en_US">
+	<meta property="article:author" content="CommunityScale">
+	<meta property="article:tag" content="Urban Planning">
+	<meta property="article:tag" content="Housing">
+	<meta property="article:tag" content="MACOG">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="MACOG Housing Study Dashboard">
+	<meta name="twitter:description" content="Interactive dashboard providing insights into MACOG's housing needs. Explore data on affordability, availability, and trends.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/CommunityScale/MACOG/main/images/socialcard.jpg">
+	<meta name="twitter:creator" content="@CommunityScale">
+	<meta http-equiv="content-language" content="en">
+
+	<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/cs-template.css">
+
+	<!-- Fonts / icons
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/ed8ea386c8.js" crossorigin="anonymous"></script>
+
+	<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+	<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	<div class="sticky">
+		<div class="topnav">
+			<div class="logo-and-menu">
+				<p class="inline-text">
+					<img src="images/client/client-logo.png" alt="MACOG" class="inline-logo">
+					<span class="title">Elkhart County HNA</span>
+				</p>
+				<div class="nav-options">
+					<div class="desktop-pages">
+						<!-- Links must be added here for desktop -->
+						<a href="#Overview"><span class="fa fa-arrow-up"></span> Back to top</a>
+						<a href="#People">People</a>
+						<a href="#Place">Place</a>
+						<a href="#Demand">Demand</a>
+						<a href="http://communityscale.github.io/MACOG/index.html"><span class="fa fa-external-link"></span> Regional Dashboard</a>
+					</div>
+					<div id="clickDiv" class="mobile-menu-icon">
+						<a class="menu-icon">
+							<i class="fa fa-bars"></i>
+						  </a>
+					</div>
+				</div>
+				
+			</div>
+			<div id="targetDiv" class="">
+				<!-- Links must be added here again for mobile -->
+				<a href="#Overview"><span class="fa fa-arrow-up"></span> Back to top</a>
+				<a href="#People">People</a>
+				<a href="#Place">Place</a>
+				<a href="#Demand">Demand</a>
+				<a href="http://communityscale.github.io/MACOG/index.html"><span class="fa fa-external-link"></span> Regional Dashboard</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cover banner -->
+
+	<div class="cover" id="Overview">
+		<div class="container" style="margin-top: 0">
+			<h1>Elkhart County
+				<br>Housing Needs Assessment
+			</h1>
+			<div class="row">
+				<div class="eight columns" style="margin-top: 20px">
+					<p>This dashboard was created by <a href="http://communityscale.io">CommunityScale</a> for <a href="https://www.macog.com/">MACOG</a> (Michiana Area Council of Governments) to summarize the Housing Needs Assessment for Elkhart County as prepared to support MACOG's overall <a href="http://communityscale.io/MACOG/index.html">Regional Housing Study</a>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header row -->
+	<div class="container">
+		<div class="row">
+			<div class="six columns" style="margin-top: 2%">
+				<p><img src="./images/Elkhart+River+District+-+1900x927+-+WR_0007_Image+9.jpg" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Elkhart County Housing Needs Assessment</h4>
+				<p>A foundational component of MACOG's Regional Housing Plan, this Housing Needs Assessment is the result of extensive quantitative data analysis and stakeholder engagement to understand housing needs and opportunties in Elkhart County.</p>
+				<p>This Housing Needs Assessment document is also availble in a much more detailed, downloadable pdf format:</p>
+				<p><a href="https://docs.google.com/presentation/d/1zOwF__ln05HebGP25b3iRVvzgEcWyS5bUvugsnZ1Z2E/edit?usp=sharing" target="blank"><button>Elkhart County Report</button></a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns" style="margin-top: 2%">
+				<p>The Housing Needs Assessment includes the following sections:</p>
+				<ul>
+					<li><a href="#People"><b>People:</b></a> Analysis of the community's household demographics, housing characteristics, and affordability levels.</li>
+					<li><a href="#Place"><b>Place:</b></a> Analysis of the community's housing supply, market conditions, and development trends.</li>
+					<li><a href="#Demand"><b>Demand:</b></a> Assessment of the communities projected housing demand accross income levels and unit types.</li>
+					<li><a href="#Results"><b>Results:</b></a> Recommended 10-year housing production target to address need, capture demand, and keep up with growth.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="People" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/people-background.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/People.svg" class="inline-image" title="People">
+					</div>
+					<h2 class="inline-text">People</h2>
+				</div>
+				<h5>The following section profiles the people of Elkhart County, detailing characteristics such as income, household structure, and cost burden. These indicators combine to describe the local population's housing needs and preferences which inform this report's recommended strategies for new housing production to meet demand and fill gaps in affordability and attainability.</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Elkhart County's population is growing older.</h3>
+				<h6>Elkhart County’s population has been aging over the past decade, with the 65+ age group growing faster than other groups and projected to outpace others into the future. In general, younger households are more likely to prefer family-oriented housing and neighborhoods where as older households may have a broader range of preferences and priorities, including senior options.</h6>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>The 65+ age cohort is projected to grow fastest over the next decade, becoming a significantly larger share of the population.</h4>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Interactive area chart" id="datawrapper-chart-sP73H" src="https://datawrapper.dwcdn.net/sP73H/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="388" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<figcaption>This chart illustrates trends in population by age cohort, both historic and projected. The projection is based on recent trends extended. Depending on economic, policy, and other conditions, the future age distribution may vary over time.</figcaption>	
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>65+ leads net new household growth between 2024-34</h4>
+				<p>This chart summarizes net household change by age group.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Column Chart" id="datawrapper-chart-qzhxK" src="https://datawrapper.dwcdn.net/qzhxK/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="376" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Middle-income households have limited housing options in Elkhart County.</h3>
+				<h6>The following analysis examines household characteristics and housing need in terms of household incomes relative to the local Area Median Income (AMI). For example, households within the "60-80%" group earn between 60% and 80% of the HUD-established AMI for the metro area. Each household AMI group has a different need for monthly housing costs.</h6>
+			</div>
+		</div>
+
+		<!-- Row with image and text -->
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Elkhart County has a relatively low middle-income population, suggesting a shortage of "missing middle" housing options.</h4>
+				<p>These households typically represent a community’s “middle class” workforce, including public safety officers, skilled nurses, educators, and municipal employees. Elkhart County's low proportion of 80-120% AMI households is likely a result of limited available housing options at price points this group can afford, requiring they live elsewhere.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Bar Chart" id="datawrapper-chart-ASJrR" src="https://datawrapper.dwcdn.net/ASJrR/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="124" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Projected growth is mostly lower-income</h3>
+				<h6>Elkhart County’s household population has grown slowly since 2010. In terms of relative income levels, most of the growth has been concentrated among higher-income households, especially the >120% AMI group.</h6>
+			</div>
+		</div>
+
+		<!-- Row with image and text -->
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Most of Elkhart County's projected growth is among higher-income households (based on recent trends extended)</h4>
+				<table class="uniform-columns">
+					<tr>
+						<th>AMI Group</th>
+						<th>2010</th>
+						<th>2022</th>
+						<th>2034</th>
+					</tr>
+					<tr>
+						<td>Below 30%</td>
+						<td>16,465</td>
+						<td>17,090</td>
+						<td>17,319</td>
+					</tr>
+					<tr>
+						<td>30-60%</td>
+						<td>22,569</td>
+						<td>21,886</td>
+						<td>20,799</td>
+					</tr>
+					<tr>
+						<td>60-80%</td>
+						<td>12,404</td>
+						<td>12,855</td>
+						<td>12,740</td>
+					</tr>
+					<tr>
+						<td>80-100%</td>
+						<td>10,331</td>
+						<td>10,701</td>
+						<td>10,850</td>
+					</tr>
+					<tr>
+						<td>100-120%</td>
+						<td>8,789</td>
+						<td>9,120</td>
+						<td>9,572</td>
+					</tr>
+					<tr class="important">
+						<td>Above 120%</td>
+						<td>29,983</td>
+						<td>35,815</td>
+						<td>41,329</td>
+					</tr>
+				</table>
+				<figcaption>Source: Census ACS 5-Year 2022.</figcaption>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="Household change by AMI group" aria-label="Interactive area chart" id="datawrapper-chart-VCZFS" src="https://datawrapper.dwcdn.net/VCZFS/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="417" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Demographics by income level</h3>
+				<h6>These charts break down socioeconomic and demographic indicators by income in terms of AMI level.</h6>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Non-white households are more likely to be low-income in Elkhart County</h4>
+				<p>Elkhart County’s lowest income groups are its most racially diverse, especially the <30% and 30-60% AMI groups. Other income levels are relatively consistent in their proportional ratios of white and non-white households.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-9aajr" src="https://datawrapper.dwcdn.net/9aajr/4/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Family households tend to be higher income than non-family households</h4>
+				<p>Elkhart County’s families with children are most prevalent in the >120% AMI group. Nonfamily households are predominantly low-income (this group includes one-person households). Families without children (such as couples) are most common at the >120% AMI level.</p>			
+				
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-1LjSG" src="https://datawrapper.dwcdn.net/1LjSG/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>	
+			</div>
+		</div>
+			
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Most households aged 65+ are lower incomewhile most middle-aged households are higher income.</h4>
+				<p>Most households in the >65 age group have incomes below 60% AMI. Households between 25-64 are most prevalent in the >120% AMI but also particularly numerous in the 30-60% and <30% AMI groups. The small group of youngest households (<25 years) are somewhat more concentrated at lower income levels.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-4NKGk" src="https://datawrapper.dwcdn.net/4NKGk/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>People with disabilities are more likely to seniors.</h4>
+				<p>Elkhart County’s resident population includes many people with disabilities that may restrict their housing choices. People with disabilities are most common in the 65+ age group but they are represented across all age groups at some level.</p>
+				
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-xQykB" src="https://datawrapper.dwcdn.net/xQykB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="183" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Cost burden in Elkhart County</h3>
+				<h6>Households are cost burdened when paying more than 30% of their income on housing costs. They are considered severely cost burdened when these costs exceed 50% of their income. For <a href="https://www.census.gov/quickfacts/fact/note/US/HSG860222" target="blank">renters</a>, this includes lease rent and utilities. For <a href="https://www.census.gov/quickfacts/fact/note/US/HSG650222" target="blank">homeowners</a>, this includes mortgage costs, property taxes, insurance, utilities, and any condo fees.</h6>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Lower-income households are much more likely cost-burdened (homeowners and renters alike)</h4>
+				<p>In Elkhart County, most low-income households are cost burdened. Most households earning >80% AMI are not cost burdened.</p>				
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-7TPgu" src="https://datawrapper.dwcdn.net/7TPgu/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="Place" style="background: linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/place-background.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/Place.svg" class="inline-image" title="Place">
+					</div>
+					<h2 class="inline-text">Place</h2>
+				</div>
+				<h5>The following section profiles the community spatially and assesses Elkhart County's housing stock and affordability, detailing characteristics such as structure type, bedroom count, and development timeframe as well as household costs and market pricing for local rental and ownership units.</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>Incomes and affordability are unevenly distributed across the region.</h3>
+				<h6>Explore this interactive map to compare neighborhoods in terms of income and other indicators.</h6>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<style>
+					.embed-container {
+						position: relative;
+						padding-bottom: 80%;
+						height: 0;
+						max-width: 100%;
+					}
+
+					.embed-container iframe,
+					.embed-container object,
+					.embed-container iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+
+					small {
+						position: absolute;
+						z-index: 40;
+						bottom: 0;
+						margin-bottom: -15px;
+					}
+				</style>
+				<div class="embed-container">
+					<style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><small><a href="//communityscale.maps.arcgis.com/apps/Embed/index.html?webmap=742a15989b534a258a5961625df60af0&extent=-86.3308,41.3494,-85.3915,41.825&zoom=true&scale=true&legendlayers=true&disable_scroll=true&theme=light" style="color:#0000FF;text-align:left" target="_blank">View larger map</a></small><br><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Elkhart_HNA" src="//communityscale.maps.arcgis.com/apps/Embed/index.html?webmap=742a15989b534a258a5961625df60af0&extent=-86.3308,41.3494,-85.3915,41.825&zoom=true&previewImage=false&scale=true&legendlayers=true&show_panel=true&disable_scroll=true&theme=light"></iframe></div>				
+				</div>
+			</div>
+		</div>
+	</div>
+<br>
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>Uneven mix of housing options</h3>
+				<h6>Elkhart County households have very different housing choices available depending on if they buy or rent, such as in terms of fundamental features like structure type and number of bedrooms.</h6>
+				
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Most single-family homes are ownership and most multi-family are rental.</h4>
+				
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-NoHyB" src="https://datawrapper.dwcdn.net/NoHyB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="213" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<figcaption>This graph inventories the local housing stock in terms of each unit's structure type, a characteristic defined as the number of units in the building that contains a given unit.</figcaption>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Most ownership units are larger and most rentals are smaller</h4>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-lh2Ut" src="https://datawrapper.dwcdn.net/lh2Ut/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="196" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<figcaption>This graph inventories the local housing stock in terms of bedroom count by unit by tenure. The majority of Elkhart County’s housing units are two bedroom or larger, especially among ownership units.</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>The affordability gap is widening.</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>As home prices and interest rates rise, homeownership is increasingly out of reach in Elkhart County.</h4>	
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-OLKNs" src="https://datawrapper.dwcdn.net/OLKNs/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="360" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>	
+				<figcaption>This chart compares the median listing price in Elkhart County with the home value affordable to a household earning the median household income. A wider gap means higher barrier to entry for first-time homebuyers and increased risk that an existing resident might be priced out of the community if they choose or need to move to a different house.</figcaption>
+				<figcaption>The calculations behind this chart include consideration of mortgage interest rates, typical down payments, and added monthly costs such as private mortgage insurance, property tax, home insurance, condo fees, and utilities.</figcaption>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Home values have more than doubled in the past decade.</h4>
+				
+				
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-YV9CE" src="https://datawrapper.dwcdn.net/YV9CE/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="364" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<figcaption>This chart tracks the <a href="https://www.zillow.com/research/methodology-neural-zhvi-32128/" target="blank">typical market value</a> for single family homes and condos over the past several years. The adjacent table translates these values into monthly costs (mortgage + tax and other costs).</figcaption>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Most current homeowners may not be able to afford current prices.</h4>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Bar Chart" id="datawrapper-chart-ZybeU" src="https://datawrapper.dwcdn.net/ZybeU/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="173" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<table class="uniform-columns">
+					<tr>
+						<th>Home type</th>
+						<th>Typical price</th>
+						<th>Monthly cost</th>
+					</tr>
+					<tr>
+						<td>Single family</td>
+						<td>$244,406</td>
+						<td>$1,945</td>
+					</tr>
+					<tr>
+						<td>Condo</td>
+						<td>$202,291</td>
+						<td>$1,632</td>
+					</tr>
+				</table>
+				<figcaption>This chart summarizes the distribution of costs across all ownership units in the area, most of which last transacted years ago. About 45% of Elkhart County's homeowners pay below $1,850/mo compared to the $2,213 and $2,763 required to afford a condo and single family on today’s market.</figcaption>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Today's average asking rent in Elkhart County is $989</h4>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-crCqu" src="https://datawrapper.dwcdn.net/crCqu/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="360" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<figcaption>The average asking rent should be understood as the typical cost to a household signing a new lease under current conditions. In reality, because this is a single average value, actual asking rents may vary depending on characteristics such as size, location, and property features but they will collectively track along this trendline.</figcaption>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>About 57% of Elkhart County renters pay less than $1,650/mo.</h4>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Bar Chart" id="datawrapper-chart-PA1Wy" src="https://datawrapper.dwcdn.net/PA1Wy/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="173" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<figcaption>This chart summarizes the distribution of costs across all ownership units in the area, most of which last transacted years ago.</figcaption>
+			</div>
+		</div>
+		<div class="row">
+			<div class="nine columns">
+				<p>These charts reveal the significant difference between how much most homeowners and renters currently pay per month (right) and it would cost per month to own a home or rent a unit on today’s market (left).</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>Shortage of lower-cost and smaller units</h3>
+				<h6>Comparing the needs of current residents with the current housing stock reveals potential misalignments between supply and demand. This is an instructive but largely hypothetical analysis due to the scale of the gap and the challenge of delivering new affordable housing in large quantities.</h6>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Housing needs of current residents</h4>
+				<p>This chart simulates the unit mix today’s local population would choose if all households could move into units that match their likely bedroom preferences and willingness to pay.</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-gMtEY" src="https://datawrapper.dwcdn.net/gMtEY/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="245" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Current housing supply and gaps</h4>
+				<p>These charts compare this “need” to the current housing stock. Highlighted positive gaps indicate under-supply; negative gaps indicate oversupply.</p>
+			</div>
+			<div class="six columns">
+				<table class="uniform-columns">
+					<tr>
+					  <th>Bedrooms</th>
+					  <th>Need</th>
+					  <th>Supply</th>
+					  <th>Gap</th>
+					</tr>
+					<tr>
+					  <td>0-1 bed</td>
+					  <td>11,257</td>
+					  <td>8,063</td>
+					  <td class="important">3,194</td>
+					</tr>
+					<tr>
+					  <td>2 beds</td>
+					  <td>21,042</td>
+					  <td>18,267</td>
+					  <td class="important">2,775</td>
+					</tr>
+					<tr>
+					  <td>3 beds</td>
+					  <td>25,270</td>
+					  <td>35,912</td>
+					  <td>-10,642</td>
+					</tr>
+					<tr>
+					  <td>4+ beds</td>
+					  <td>14,181</td>
+					  <td>17,566</td>
+					  <td>-3,385</td>
+					</tr>
+				</table>
+				<table class="uniform-columns">
+					<tr>
+					  <th>Monthly cost</th>
+					  <th>Need</th>
+					  <th>Supply</th>
+					  <th>Gap</th>
+					</tr>
+					<tr>
+					  <td>Below $600</td>
+					  <td>12,916</td>
+					  <td>10,233</td>
+					  <td class="important">2,683</td>
+					</tr>
+					<tr>
+					  <td>$600-$1,250</td>
+					  <td>21,857</td>
+					  <td>14,037</td>
+					  <td class="important">7,820</td>
+					</tr>
+					<tr>
+					  <td>$1,250-$1,650</td>
+					  <td>10,665</td>
+					  <td>8,666</td>
+					  <td class="important">1,999</td>
+					</tr>
+					<tr>
+					  <td>$1,650-$2,050</td>
+					  <td>6,880</td>
+					  <td>7,181</td>
+					  <td>-301</td>
+					</tr>
+					<tr>
+					  <td>$2,050-$2,450</td>
+					  <td>5,145</td>
+					  <td>6,257</td>
+					  <td>-1,112</td>
+					</tr>
+					<tr>
+					  <td>Above $2,450</td>
+					  <td>14,287</td>
+					  <td>25,765</td>
+					  <td>-11,478</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="six columns">
+				
+			</div>
+			<div class="six columns">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>Housing production has slowed in recent years.</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Elkhart County grew steady for many decades but construction has tapered off since 2010.</h4>
+				<p>Elkhart County saw relatively consistent housing production for most of the 20th century but the pace has slowed considerably in the past two decades. This table chronicles the community's development history, indicating decades with relatively more or less construction activity. 2020 or later is approximate as new housing units are completed.</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Table" id="datawrapper-chart-Wa4cy" src="https://datawrapper.dwcdn.net/Wa4cy/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="353" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>About 3,560 units have been permitted over the past decade.</h4>
+				<p>Building permitting history is a proxy for construction activity over time. Elkhart County has seen relatively consistent permitting activity over the past decade, typically between 250-500 units per year with a couple outliers.</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Column Chart" id="datawrapper-chart-kjYAa" src="https://datawrapper.dwcdn.net/kjYAa/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="377" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>Recent multifamily development has focused around downtown neighborhoods.</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Most multifamily rental development since 2014 has been focused in and around downtown Elkhart and Goshen.</h4>
+			</div>
+			<div class="six columns">
+				<p><img src="./images/ElkhartRecentMFCostar.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns">
+				<h4>About 820 multifamily rental units have been built since 2014, consisting mostly of one bedroom units with relatively low rents.</h4>
+			</div>
+			<div class="six columns">
+				<table class="uniform-columns">
+					<tr>
+						<th>Unit size</th>
+						<th>Average rent</th>
+						<th>Of total</th>
+					</tr>
+					<tr>
+						<td>Studio</td>
+						<td>$1,122</td>
+						<td>6%</td>
+					</tr>
+					<tr class="important">
+						<td>1 bedroom</td>
+						<td>$1,320</td>
+						<td>52%</td>
+					</tr>
+					<tr>
+						<td>2 bedrooms</td>
+						<td>$1,729</td>
+						<td>34%</td>
+					</tr>
+					<tr>
+						<td>3+ bedrooms</td>
+						<td>$1,911</td>
+						<td>8%</td>
+					</tr>
+				</table>
+				<figcaption>Source: asdf.</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="Demand" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/demand-background.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/Demand.svg" class="inline-image" title="Demand"/>
+					</div>
+					<h2 class="inline-text">Demand</h2>
+				</div>
+				<h5>In order to calibrate future housing production to best meet the community's needs, two factors must be established: how many units are needed in total and what is the right mix of unit types and prices. The following section addresses each of these factors to inform recommendations that effectively meet local need and reflect the community's values and priorities.</h5>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Sources of housing demand in Elkhart County</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Elkhart County's housing demand orginates from both current and new households.</h4>
+				<p>Based on the analyses contained within the People and Place sections of this report, Elkhart County’s housing demand is driven by a number of factors that include both unmet demand among existing residents and new growth among projected and potential future residents. This chart illustrates demand origins on the left and demand drivers on the right.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p><img src="./images/Elkhart_sankey_demand1.png" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+				<figcaption>Each demand driver in more detail below followed by an estimated quantification of total demand by income level.</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Attainability gaps</h3>
+				
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>There are not enough low-cost units to meet demand among low-income residents.</h4>
+				<p>The gap analysis compares Elkhart County’s distribution of household incomes to its mix of housing options by cost to uncover potential supply shortages at different price points. The analysis identified a shortage of 12,502 units across a range of price points below $1,650 per month.</p>
+				<p>Adding units at these price points would help take pressure off existing residents currently experiencing cost burden.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Column Chart" id="datawrapper-chart-DyoaC" src="https://datawrapper.dwcdn.net/DyoaC/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="376" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Downsizing seniors</h3>
+				
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>A growing number of seniors will seek new housing options as they age.</h4>
+				<p>Given changing housing preferences and needs as people age, it is likely a portion of these senior households will explore downsizing options such as a smaller, accessible unit with fewer bedrooms located in a walkable location. If 3% of these households sought new units to downsize into each year, the county would need to add 5,361 units appropriate for seniors over the next 10 years.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<table>
+					<tr>
+						<td>65+ households of 1-2 people in 3+ bedroom units</td>
+						<td>17,869</td>
+					</tr>
+					<tr>
+						<td>Potential annual downsizing rate</td>
+						<td>3%</td>
+					</tr>
+					<tr class="important">
+						<td>Units needed to accommodate downsizers over 10 years</td>
+						<td>5,361</td>
+					</tr>
+				</table>
+				<figcaption>Elkhart County’s seniors currently comprises a modest portion of the total population but this share is expected to grow over the next 10 years. Most of these seniors live in relatively large units of 3 or more bedrooms.</figcaption>
+				<figcaption>Source: asdf.</figcaption>
+			</div>
+		</div>
+		<div class="twelve columns" style="margin-top: 2%">
+			
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Organic household growth</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Elkhart County is expected to grow modestly over the next decade.</h4>
+				<p>Recent trends suggests Elkhart County should expect to grow by 1,936 new households over the next 10 years.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Interactive area chart" id="datawrapper-chart-OP3pS" src="https://datawrapper.dwcdn.net/OP3pS/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="381" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>To meet the trends extended growth projection, Elkhart County would need to add 2,335 housing units over the next decade.</h4>
+				<p>This production target combines demand driven by net household growth as well as other factors which also contribute to maintaining a suitable housing supply over time.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<table>
+					<tr>
+						<td>Household growth: 1,936</td>
+						<td>Forecasted from 2024 to 2034.</td>
+					</tr>
+					<tr>
+						<td>Overcrowding adjustment: 0</td>
+						<td>Local rate of 2.5% is below the national average of 3.4%.</td>
+					</tr>
+					<tr>
+						<td>Replacement housing: 399</td>
+						<td>0.05% of the housing stock is replaced annually</td>
+					</tr>
+					<tr>
+						<td>Vacancy adjustment: 0</td>
+						<td>Local rate of 11.2% is above the healthy market minimum of 5%</td>
+					</tr>
+					<tr>
+						<td>Substandard adjustment: 0</td>
+						<td>Local rate of 0.2% is below the national average of 0.4%</td>
+					</tr>
+					<tr>
+						<th>Total units needed: 2,335</th>
+						<th>To keep up with growth and maintain a healthy housing stock</th>
+					</tr>
+				</table>
+				<figcaption>Source: CommunityScale.</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Workforce housing</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>There are not enough units to house people employed in Elkhart County.</h4>
+				<p>As a regional employment hub, Elkhart County contains more jobs than housing units. However, only about 20% of the people working in Elkhart County live in the County as well. While many of the workers who commute into the city simply choose to live somewhere else, a portion of these workers may prefer to live in the County if the right housing options were available.</p>
+				
+				
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<table>
+					<tr>
+						<td>Jobs in Elkhart County</td>
+						<td>134,120</td>
+					</tr>
+					<tr>
+						<td>Workers that live and work in Elkhart County</td>
+						<td>26,959</td>
+					</tr>
+					<tr>
+						<td>Portion of local workforce that live in Elkhart County</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td>Desired portion by 2034</td>
+						<td>25%</td>
+					</tr>
+					<tr class="important">
+						<td>Additional workforce households (and units) by 2034</td>
+						<td>6,571</td>
+					</tr>
+				</table>
+				<figcaption>Source: CommunityScale.</figcaption>			
+			</div>
+			
+		</div>
+		<div class="twelve columns" style="margin-top: 2%">
+			<p>Increasing  the rate of local workforce living in Elkhart County to 25% by 2034 would require providing 6,571 additional households.</p>
+			<p>“Workforce housing” is typically considered affordable to 80-120% AMI, a segment of the population vulnerable to displacement if they cannot find adequate and affordable housing, including police, firefighters, teachers, skilled nurses, and municipal employees.</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Housing demand by income level</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>There is demand for 26,603 units over the next 10 years.</h4>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<table>
+					<tr>
+					  <th>AMI</th>
+					  <th>Total demand <br>(units)</th>
+					</tr>
+					<tr>
+					  <td>&lt;30%</td>
+					  <td>3,310</td>
+					</tr>
+					<tr>
+					  <td>30-60%</td>
+					  <td>7,820</td>
+					</tr>
+					<tr>
+					  <td>60-80%</td>
+					  <td>2,447</td>
+					</tr>
+					<tr>
+					  <td>80-100%</td>
+					  <td>5,245</td>
+					</tr>
+					<tr>
+					  <td>100-120%</td>
+					  <td>2,222</td>
+					</tr>
+					<tr>
+					  <td>&gt;120%</td>
+					  <td>5,560</td>
+					</tr>
+						<td></td>
+						<th>26,603</th>
+				</table>
+				
+				<figcaption>The table above summarizes the demand generated by the factors described in this section of the analysis. These figures account for potential overlap between different demand factors to avoid double counting, resulting in a total that might be less than the sum of the factors. For example, many senior households fall into bot attainability gaps and potential downsizer categories.</figcaption>		
+				<figcaption>Source: CommunityScale.</figcaption>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Each source of demand includes a different mix of household incomes.</h4>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p><img src="./images/Elkhart_sankey_demand2b.png" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+				<figcaption>The diagram above illustrates how Elkhart County’s 10-year housing demand translate into income levels. While this distribution reflects expected demand over the next 10 years, it does not necessarily coincide with the housing production target in the following Results section. Housing for each income level requires a different set of policies, programs, and subsidies to build. In many cases, there simply is not enough capacity to meet the full demand right away.</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Calibrating housing parameters to meet demand</h3>
+				<h6>The following summarizes current trends and housing preferences that should be considered when programming and designing housing to best meet demand.</h6>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Today's general housing preferences</h4>
+				<p>Household structures have changed significantly since much of Elkhart County’s housing supply was built. Today, households are smaller, less likely to have one or more children, and more likely to include non-family or multi generational cohabitants. Future development should be designed to reflect the current diversity of household structures and wider range of housing needs and preferences.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p class="large">🛌 Smaller units</p>
+				<p>Fewer bedrooms for smaller households.</p>
+				<p class="large">🅿️ Parking optional</p>
+				<p>Enabling a car-free or car-lite lifestyle.</p>
+				<p class="large">Roommate-ready</p>
+				<p>Accommodating non-family households.</p>
+				<p class="large">🪴 Green building</p>
+				<p>Efficient, low-impact design and systems.</p>
+				<p class="large">👵🏻 Multigenerational</p>
+				<p>Space for adult children or elderly parents.</p>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Workforce housing</h4>
+				<p>“Workforce housing” is typically oriented to middle-income households that often consist of singles, couples, or young families. Jobs typically attributed to this group include public safety officers, educators, municipal employees, skilled nurses, and other occupations that often require some level of higher education and pay wages equating to 80-120% AMI.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p class="large">👨‍👩‍👧💰 Moderate cost for families</p>
+				<p>Workforce families can afford units that cost $1,700 - 2,500 per month.</p>
+				<p class="large">🧍🏽💵 Lower cost for singles</p>
+				<p>One-person workforce households cannot afford as much as dual-earner families.</p>
+				<p class="large">🛏️ Fewer bedrooms</p>
+				<p>Workforce-oriented housing should include mostly 0-2 bedroom units.</p>
+				<p class="large">🔨 Well-maintained</p>
+				<p>Workforce can afford rent/mortgage but large capital costs can be destabilizing.</p>
+				<p class="large">📍 Near job centers</p>
+				<p>Households can save money by living close to work and commuting without a car.</p>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Senior housing</h4>
+				<p>Recent years have seen growing demand for housing in walkable, downtown or compact neighborhood environments. This can include both dense urban places as well as small town downtowns. Increasingly, the most desirable and competitive housing markets are those with access to the qualities and amenities of a downtown environment within walking distance.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p class="large">👨‍👩‍👧 Universal design</p>
+				<p>Accommodating to people with limited mobility.</p>
+				<p class="large">🧹 Low maintenance</p>
+				<p>Less space and less work to keep up.</p>
+				<p class="large">💲 Energy efficient</p>
+				<p>Lower utility costs affordable on fixed income.</p>
+				<p class="large">♿ Accessible</p>
+				<p>Single-level with ADA-compliant doors, baths, etc.</p>
+				<p class="large">🤗 Social</p>
+				<p>Designed and located to promote an active community life.</p>
+			</div>
+		</div>
+		
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Downtown living</h4>
+				<p>Recent years have seen growing demand for housing in walkable, downtown or compact neighborhood environments. This can include both dense urban places as well as small town downtowns. Increasingly, the most desirable and competitive housing markets are those with access to the qualities and amenities of a downtown environment within walking distance.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p class="large">🚶🏼 Walkability</p>
+				<p>More daily needs and wants accessible on foot.</p>
+				<p class="large">🚌 Transit</p>
+				<p>Close to bus lines and train connections.</p>
+				<p class="large">🏪 Amenities</p>
+				<p>Near restaurants, shops, and cultural destinations.</p>
+				<p class="large">🏥 Services</p>
+				<p>Access to health and community services without a car.</p>
+				<p class="large">🏘️️ Activity</p>
+				<p>Located in a lively and vibrant neighborhood.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns" style="margin-top: 2%">
+				
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Homeownership</h4>
+				<p>Elkhart County has a lower rate of homeownership than the rest of the state but higher than the national average. While it is important to maintain a significant rental housing supply to provide options for people not interested in or ready to buy, a majority of people prefer homeownership for at least certain periods of their lives, such as starting and raising a family.</p>
+				<p>The Elkhart County community has expressed interest in stronger pathways to homeownership, especially among middle-income households. Adding more ownership units will contribute to this goal, along with other support such as financial assistance to overcome high down payment and financing costs.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Columns" id="datawrapper-chart-zQFdt" src="https://datawrapper.dwcdn.net/zQFdt/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="364" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="Results" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/results-background.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/Results.svg" class="inline-image" title="Results"/>
+					</div>
+					<h2 class="inline-text">Results</h2>
+				</div>
+				<h5>The following summarizes the plan's recommended housing production target for Elkhart County. The cost and unit mix is informed by the analysis summarized above as well as an evaluation of local development capacity and available funding sources and subsidies.</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>10-year housing production target</h3>
+				<h6>Production target by tenure, bedroom count and cost.</h6>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns" style="margin-top: 2%">
+				<p><img src="./images/Elkhart production table.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="four columns" style="margin-top: 2%">
+				<p>The table above and chart at right translate Elkhart County’s 10-year production target into a unit mix by cost, bedroom count, and tenure (rent/own). The table below converts monthly cost into approximate purchase price and rent after accounting for other housing costs like utilities and taxes.</p>
+				<p><img src="./images/Elkhart cost table.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+			</div>
+			<div class="eight columns" style="margin-top: 2%">
+				<p><img src="./images/Elkhart production chart.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="unresponsive"  style="margin-bottom: 30px;">
+				<div class="content-size"><a href="https://www.macog.com/" target="_blank"><img src="./images/client/client-logo.png" height=auto width=30px title="FRCOG" alt="FRCOG"></a></div>
+				<div class="fill-space">
+					<p class="small-text"><a href="https://www.macog.com/" target="_blank">The Michiana Area Council of Governments (MACOG)</a> is a voluntary organization of local governments that studies and attempts to resolve areas of interlocal issues.</p>
+				</div>
+			</div>
+	
+			<div class="unresponsive">
+				<div class="content-size"><a href="http://communityscale.io"><img src="./images/CommunityScale-logo.png" height=auto width=30px title="CommunityScale" alt="CommunityScale"></a></div>
+				<div class="fill-space">
+					<p class="small-text"><a href="http://communityscale.io">CommunityScale</a> is a pioneering urban planning and spatial data analysis company serving clients across the United States. <br> Follow CommunityScale on <a href="https://www.linkedin.com/company/communityscale">LinkedIn</a> and <a href="https://twitter.com/CommunityScale">Twitter/X</a> <br>This dashboard is <a href="https://github.com/CommunityScale/FRCOG">open source</a> MIT license - 2024 CommunityScale</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

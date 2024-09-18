@@ -877,6 +877,10 @@ input[type="button"].button-primary:focus {
   border-color: #234361;
 }
 
+span.fa {
+  margin-right: 4px;
+}
+
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

@@ -190,7 +190,7 @@ Table of contents
   margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any default padding */
   gap: 5px; /* Add space between all elements */
-  white-space: nowrap; /* Prevent line breaks */
+  /* white-space: nowrap; Prevent line breaks */
 }
 
 .small-text {
@@ -629,6 +629,7 @@ figcaption {
 
 p.large {
   font-size: 1.75rem;
+  margin-bottom: .25rem;
 }
 
 p.large-number {

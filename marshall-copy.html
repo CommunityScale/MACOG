@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Metadata 2024 -->
+	<meta charset="utf-8">
+	<title>Marshall County Housing Needs Assessment</title>
+	<meta name="description" content="Explore our interactive dashboard to understand housing needs in MACOG. This tool provides insights into housing availability, affordability, and trends.">
+	<meta name="keywords" content="MACOG, Housing, Urban Planning, CommunityScale, Assessment, Dashboard">
+	<meta name="author" content="CommunityScale">
+	<link rel="canonical" href="https://communityscale.github.io/MACOG/">
+	<meta property="og:title" content="MACOG Housing Study Dashboard">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://communityscale.github.io/MACOG/">
+	<meta property="og:image" content="https://raw.githubusercontent.com/CommunityScale/MACOG/main/images/socialcard.jpg">
+	<meta property="og:description" content="Housing Study educational dashboard for MACOG. Provides detailed analysis and insights on housing trends, affordability, and needs.">
+	<meta property="og:site_name" content="CommunityScale">
+	<meta property="og:locale" content="en_US">
+	<meta property="article:author" content="CommunityScale">
+	<meta property="article:tag" content="Urban Planning">
+	<meta property="article:tag" content="Housing">
+	<meta property="article:tag" content="MACOG">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="MACOG Housing Study Dashboard">
+	<meta name="twitter:description" content="Interactive dashboard providing insights into MACOG's housing needs. Explore data on affordability, availability, and trends.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/CommunityScale/MACOG/main/images/socialcard.jpg">
+	<meta name="twitter:creator" content="@CommunityScale">
+	<meta http-equiv="content-language" content="en">
+
+	<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/cs-template.css">
+
+	<!-- Fonts / icons
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/ed8ea386c8.js" crossorigin="anonymous"></script>
+
+
+	<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+	<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	<!-- Sticky header -->
+	<div class="sticky">
+		<div class="topnav">
+			<div class="logo-and-menu">
+				<p class="inline-text">
+					<img src="images/client/client-logo.png" alt="MACOG" class="inline-logo">
+					<span class="title">Marshall County HNA</span>
+				</p>
+				<div class="nav-options">
+					<div class="desktop-pages">
+						<!-- Links must be added here for desktop -->
+						<a href="#Overview"><span class="fa fa-arrow-up"></span> Back to top</a>
+						<a href="#People">People</a>
+						<a href="#Place">Place</a>
+						<a href="#Demand">Demand</a>
+						<a href="http://communityscale.github.io/MACOG/index.html" target="_blank"><span class="fa fa-external-link"></span> Regional Dashboard</a>
+					</div>
+					<div id="clickDiv" class="mobile-menu-icon">
+						<a class="menu-icon">
+							<i class="fa fa-bars"></i>
+						  </a>
+					</div>
+				</div>
+				
+			</div>
+			<div id="targetDiv" class="">
+				<!-- Links must be added here again for mobile -->
+				<a href="#Overview"><span class="fa fa-arrow-up"></span> Back to top</a>
+				<a href="#People">People</a>
+				<a href="#Place">Place</a>
+				<a href="#Demand">Demand</a>
+				<a href="http://communityscale.github.io/MACOG/index.html" target="_blank"><span class="fa fa-external-link"></span> Regional Dashboard</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cover banner -->
+
+	<div class="cover" id="Overview" >
+		<div class="container" style="margin-top: 0">
+			<h1>Marshall County
+				<br>Housing Needs Assessment
+			</h1>
+			<div class="row">
+				<div class="eight columns" style="margin-top: 20px">
+					<p>This dashboard was created by <a href="http://communityscale.io">CommunityScale</a> for <a href="https://www.macog.com/">MACOG</a> (Michiana Area Council of Governments) to summarize the Housing Needs Assessment for Marshall County as prepared to support MACOG's overall <a href="http://communityscale.io/MACOG/index.html">Regional Housing Study</a>.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header row -->
+	<div class="container">
+		<div class="row">
+			<div class="six columns" style="margin-top: 2%">
+				<p><img src="./images/Marshall downtown Plymouth.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Marshall County Housing Needs Assessment</h4>
+				<p>A foundational component of MACOG's Regional Housing Plan, this Housing Needs Assessment is the result of extensive quantitative data analysis and stakeholder engagement to understand housing needs and opportunties in Marshall County.</p>
+				<p>This Housing Needs Assessment document is also availble in a much more detailed, downloadable pdf format:</p>
+				<p><a href="https://docs.google.com/presentation/d/1zOwF__ln05HebGP25b3iRVvzgEcWyS5bUvugsnZ1Z2E/edit?usp=sharing" target="blank"><button><span class="fa fa-file-text-o"></span> Read the full report</button></a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns" style="margin-top: 2%">
+				<p>The Housing Needs Assessment includes the following sections:</p>
+				<ul>
+					<li><a href="#People"><b>People:</b></a> Analysis of the community's household demographics, housing characteristics, and affordability levels.</li>
+					<li><a href="#Place"><b>Place:</b></a> Analysis of the community's housing supply, market conditions, and development trends.</li>
+					<li><a href="#Demand"><b>Demand:</b></a> Assessment of the communities projected housing demand accross income levels and unit types.</li>
+					<li><a href="#Results"><b>Results:</b></a> Recommended 10-year housing production target to address need, capture demand, and keep up with growth.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="People" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/people-background.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/People.svg" class="inline-image" title="People">
+					</div>
+					<h2 class="inline-text">People</h2>
+				</div>
+				<h5>The following section profiles the people of Marshall County, detailing characteristics such as income, household structure, and cost burden. These indicators combine to describe the local population's housing needs and preferences which inform this report's recommended strategies for new housing production to meet demand and fill gaps in affordability and attainability.</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Marshall County's population is growing older.</h3>
+				<h6>Marshall County’s population has been aging over the past decade, with the 65+ age group growing faster than other groups and projected to outpace others into the future. In general, younger households are more likely to prefer family-oriented housing and neighborhoods where as older households may have a broader range of preferences and priorities, including senior options.</h6>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>The 65+ age cohort is projected to grow fastest over the next decade, becoming a significantly larger share of the population.</h4>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Interactive area chart" id="datawrapper-chart-1xHud" src="https://datawrapper.dwcdn.net/1xHud/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="388" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<figcaption>This chart illustrates trends in population by age cohort, both historic and projected. The projection is based on recent trends extended. Depending on economic, policy, and other conditions, the future age distribution may vary over time.</figcaption>	
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>65+ leads net new household growth between 2024-34</h4>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Column Chart" id="datawrapper-chart-er2QE" src="https://datawrapper.dwcdn.net/er2QE/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="376" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<figcaption>This chart summarizes net household change by age group.</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Middle-income households have limited housing options in Marshall County.</h3>
+				<h6>The following analysis examines household characteristics and housing need in terms of household incomes relative to the local Area Median Income (AMI). For example, households within the "60-80%" group earn between 60% and 80% of the HUD-established AMI for the metro area. Each household AMI group has a different need for monthly housing costs.</h6>
+			</div>
+		</div>
+
+		<!-- Row with image and text -->
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Marshall County has a relatively low middle-income population, suggesting a shortage of "missing middle" housing options.</h4>
+				<p>These households typically represent a community’s “middle class” workforce, including public safety officers, skilled nurses, educators, and municipal employees. MACOG’s low proportion of 80-120% AMI households is likely a result of limited available housing options at price points this group can afford, requiring they live elsewhere.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Bar Chart" id="datawrapper-chart-tTMV4" src="https://datawrapper.dwcdn.net/tTMV4/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="124" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>The household population is slowly declining.</h3>
+				<h6>Marshall County’s household population has declined somewhat since 2010. In terms of relative income levels, only the 60-80% AMI and above 120% AMI groups saw growth over this period.</h6>
+			</div>
+		</div>
+
+		<!-- Row with image and text -->
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Marshall County is at risk of further household population decline if recent trends continue</h4>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Interactive area chart" id="datawrapper-chart-sBvJx" src="https://datawrapper.dwcdn.net/sBvJx/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="381" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>	
+				<table class="uniform-columns">
+					<tr>
+						<th>AMI group</th>
+						<th>2010</th>
+						<th>2022</th>
+						<th>2034</th>
+						<th>2022-2034 change</th>
+					  </tr>
+					  <tr>
+						<td>Below 30%</td>
+						<td>2,789</td>
+						<td>2,289</td>
+						<td>1,859</td>
+						<td>-18.8%</td>
+					  </tr>
+					  <tr>
+						<td>30-60%</td>
+						<td>3,856</td>
+						<td>3,640</td>
+						<td>3,366</td>
+						<td>-7.6%</td>
+					  </tr>
+					  <tr>
+						<td>60-80%</td>
+						<td>2,139</td>
+						<td>2,247</td>
+						<td>2,378</td>
+						<td>+5.8%</td>
+					  </tr>
+					  <tr>
+						<td>80-100%</td>
+						<td>2,146</td>
+						<td>1,795</td>
+						<td>1,586</td>
+						<td>-11.6%</td>
+					  </tr>
+					  <tr>
+						<td>100-120%</td>
+						<td>1,872</td>
+						<td>1,617</td>
+						<td>1,401</td>
+						<td>-13.4%</td>
+					  </tr>
+					  <tr>
+						<td>Above 120%</td>
+						<td>4,830</td>
+						<td>5,327</td>
+						<td>5,552</td>
+						<td>+4.2%</td>
+					  </tr>
+					  <tr class="important">
+						<td>Total</td>
+						<td>17,632</td>
+						<td>16,915</td>
+						<td>16,142</td>
+						<td>-4.6%</td>
+					  </tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Demographics by income level</h3>
+				<h6>These charts break down socioeconomic and demographic indicators by income in terms of AMI level.</h6>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Somewhat higher diversity among higher income households</h4>
+				<p>Marshall County’s highest income group is its most racially diverse. Other income levels are relatively consistent in their proportional ratios of white and non-white households.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-Cmbug" src="https://datawrapper.dwcdn.net/Cmbug/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Family households tend to be higher income than non-family households</h4>
+				<p>Marshall County’s families with children are most prevalent in the >120% AMI group. Nonfamily households are predominantly low-income (this group includes one-person households). Families without children (such as couples) are most common at the >120% AMI level.</p>			
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-LsdPq" src="https://datawrapper.dwcdn.net/LsdPq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Most households aged 65+ are lower incomewhile most middle-aged households are higher income.</h4>
+				<p>Most households in the >65 age group have incomes below 60% AMI. Households between 25-64 are most prevalent in the >120% AMI but also particularly numerous in the 30-60% and <30% AMI groups. The small group of youngest households (<25 years) are somewhat more concentrated at lower income levels.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-qudAs" src="https://datawrapper.dwcdn.net/qudAs/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>People with disabilities are more likely to seniors.</h4>
+				<p>Marshall County’s resident population includes many people with disabilities that may restrict their housing choices. People with disabilities are most common in the 65+ age group but they are represented across all age groups at some level.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-8PQSC" src="https://datawrapper.dwcdn.net/8PQSC/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="183" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Cost burden in Marshall County</h3>
+				<h6>Households are cost burdened when paying more than 30% of their income on housing costs. They are considered severely cost burdened when these costs exceed 50% of their income. For <a href="https://www.census.gov/quickfacts/fact/note/US/HSG860222" target="blank">renters</a>, this includes lease rent and utilities. For <a href="https://www.census.gov/quickfacts/fact/note/US/HSG650222" target="blank">homeowners</a>, this includes mortgage costs, property taxes, insurance, utilities, and any condo fees.</h6>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Lower-income households are much more likely cost-burdened (homeowners and renters alike)</h4>
+				<p>In Marshall County, most households earning below 30% AMI are cost burdened. Most households earning above 60% AMI are not cost burdened.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-Mk0Rw" src="https://datawrapper.dwcdn.net/Mk0Rw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="263" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="Place" style="background: linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/place-background.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/Place.svg" class="inline-image" title="Place">
+					</div>
+					<h2 class="inline-text">Place</h2>
+				</div>
+				<h5>The following section profiles the community spatially and assesses Marshall County's housing stock and affordability, detailing characteristics such as structure type, bedroom count, and development timeframe as well as household costs and market pricing for local rental and ownership units.</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>Incomes and affordability are unevenly distributed across the region.</h3>
+				<h6>Explore this interactive map to compare neighborhoods in terms of income and other indicators.</h6>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<style>
+					.embed-container {
+						position: relative;
+						padding-bottom: 80%;
+						height: 0;
+						max-width: 100%;
+					}
+
+					.embed-container iframe,
+					.embed-container object,
+					.embed-container iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+
+					small {
+						position: absolute;
+						z-index: 40;
+						bottom: 0;
+						margin-bottom: -15px;
+					}
+				</style>
+				<div class="embed-container">
+					<style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Marshall_HNA" src="//communityscale.maps.arcgis.com/apps/Embed/index.html?webmap=c179adf3d4984a7c87520e57f6df868f&extent=-86.7148,41.0666,-85.7755,41.5443&zoom=true&previewImage=false&scale=true&legendlayers=true&show_panel=true&disable_scroll=true&theme=light"></iframe></div>				
+				</div>
+			</div>
+		</div>
+	</div>
+<br>
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>Uneven mix of housing options</h3>
+				<h6>Marshall County households have very different housing choices available depending on if they buy or rent, such as in terms of fundamental features like structure type and number of bedrooms.</h6>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Most single-family homes are ownership and most multi-family are rental.</h4>
+				<p>This graph inventories the local housing stock in terms of each unit's structure type, a characteristic defined as the number of units in the building that contains a given unit.</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-jD4PQ" src="https://datawrapper.dwcdn.net/jD4PQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="213" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>	
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Most ownership units are larger and most rentals are smaller</h4>
+				<p>This graph inventories the local housing stock in terms of bedroom count by unit by tenure. The majority of Marshall County’s housing units are two bedroom or larger, especially among ownership units.</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-NpLlL" src="https://datawrapper.dwcdn.net/NpLlL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="196" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>The affordability gap is widening.</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>As home prices and interest rates rise, homeownership is increasingly out of reach in Marshall County.</h4>
+				<p>This chart compares the median listing price in Marshall County with the home value affordable to a household earning the median household income. A wider gap means higher barrier to entry for first-time homebuyers and increased risk that an existing resident might be priced out of the community if they choose or need to move to a different house.</p>
+				<p>The calculations behind this chart include consideration of mortgage interest rates, typical down payments, and added monthly costs such as private mortgage insurance, property tax, home insurance, condo fees, and utilities.</p.>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-Rndmc" src="https://datawrapper.dwcdn.net/Rndmc/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="360" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Home values have more than doubled in the past decade.</h4>
+				<p>This chart tracks the <a href="https://www.zillow.com/research/methodology-neural-zhvi-32128/" target="blank">typical market value</a> for single family homes and condos over the past several years. The adjacent table translates these values into monthly costs (mortgage + tax and other costs).</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-FNmiC" src="https://datawrapper.dwcdn.net/FNmiC/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="364" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Most current homeowners may not be able to afford current prices.</h4>
+				<p>This chart summarizes the distribution of costs across all ownership units in the area, most of which last transacted years ago. About 45% of Marshall County homeowners pay below $1,750/mo compared to the $2,241 and $1,903 required to afford a condo and single family on today’s market.</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Bar Chart" id="datawrapper-chart-9aoLJ" src="https://datawrapper.dwcdn.net/9aoLJ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="173" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+				<table class="uniform-columns">
+					<tr>
+						<th>Home type</th>
+						<th>Typical price</th>
+						<th>Monthly cost</th>
+					</tr>
+					<tr>
+						<td>Single family</td>
+						<td>$242,774</td>
+						<td>$1,903</td>
+					</tr>
+					<tr>
+						<td>Condo</td>
+						<td>$289,011</td>
+						<td>$2,241</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="twelve columns">
+				<p>These charts reveal the significant difference between how much most homeowners currently pay per month (right) and it would cost per month to own a home purchased on today’s market (left).</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twleve columns center-align">
+				<h3>Shortage of lower-cost and smaller units</h3>
+				<h6>Comparing the needs of current residents with the current housing stock reveals potential misalignments between supply and demand. This is an instructive but largely hypothetical analysis due to the scale of the gap and the challenge of delivering new affordable housing in large quantities.</h6>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Housing needs of current residents</h4>
+				<p>This chart simulates the unit mix today’s local population would choose if all households could move into units that match their likely bedroom preferences and willingness to pay.</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Stacked Bars" id="datawrapper-chart-rk9VG" src="https://datawrapper.dwcdn.net/rk9VG/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="245" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Current housing supply and gaps</h4>
+				<p>These charts compare this “need” to the current housing stock. Highlighted positive gaps indicate under-supply; negative gaps indicate oversupply.</p>
+			</div>
+			<div class="six columns">
+				<table class="uniform-columns">
+					<tr>
+					  <th>Bedrooms</th>
+					  <th>Need</th>
+					  <th>Supply</th>
+					  <th>Gap</th>
+					</tr>
+					<tr>
+					  <td>0-1 bed</td>
+					  <td>2,997</td>
+					  <td>1,540</td>
+					  <td class="important">1,457</td>
+					</tr>
+					<tr>
+					  <td>2 beds</td>
+					  <td>5,266</td>
+					  <td>4,150</td>
+					  <td class="important">1,116</td>
+					</tr>
+					<tr>
+					  <td>3 beds</td>
+					  <td>5,720</td>
+					  <td>9,687</td>
+					  <td>-3,967</td>
+					</tr>
+					<tr>
+					  <td>4+ beds</td>
+					  <td>2,931</td>
+					  <td>4,451</td>
+					  <td>-1,520</td>
+					</tr>
+				</table>
+				<table class="uniform-columns">
+					<tr>
+					  <th>Monthly cost</th>
+					  <th>Need</th>
+					  <th>Supply</th>
+					  <th>Gap</th>
+					</tr>
+					<tr>
+					  <td>Below $650</td>
+					  <td>2,790</td>
+					  <td>2,217</td>
+					  <td class="important">573</td>
+					</tr>
+					<tr>
+					  <td>$650-$1,300</td>
+					  <td>5,079</td>
+					  <td>3,595</td>
+					  <td class="important">1,484</td>
+					</tr>
+					<tr>
+					  <td>$1,300-$1,750</td>
+					  <td>2,777</td>
+					  <td>2,269</td>
+					  <td class="important">508</td>
+					</tr>
+					<tr>
+					  <td>$1,750-$2,200</td>
+					  <td>1,683</td>
+					  <td>1,761</td>
+					  <td>-78</td>
+					</tr>
+					<tr>
+					  <td>$2,200-$2,650</td>
+					  <td>1,329</td>
+					  <td>1,581</td>
+					  <td>-252</td>
+					</tr>
+					<tr>
+					  <td>Above $2,650</td>
+					  <td>3,254</td>
+					  <td>5,364</td>
+					  <td>-2,110</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>Housing production has slowed in recent years.</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Marshall County grew steady for many decades but construction has tapered off since 2010.</h4>
+				<p>Marshall County saw relatively consistent housing production for most of the 20th century but the pace has slowed considerably in the past two decades. This table chronicles the community's development history, indicating decades with relatively more or less construction activity. 2020 or later is approximate as new housing units are completed.</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Table" id="datawrapper-chart-1RH7A" src="https://datawrapper.dwcdn.net/1RH7A/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="353" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>About 1,018 units have been permitted over the past decade.</h4>
+				<p>Building permitting history is a proxy for construction activity over time. Marshall County has seen much more permitting activity over the past 5 years than the previous 5 years.</p>
+			</div>
+			<div class="six columns">
+				<iframe title="" aria-label="Column Chart" id="datawrapper-chart-kYVPQ" src="https://datawrapper.dwcdn.net/kYVPQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="377" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align">
+				<h3>Recent multifamily development has focused around downtown neighborhoods.</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Most multifamily rental development since 2004 has been focused in and around Marshall County's larger town centers, especially Plymouth and Culver.</h4>
+			</div>
+			<div class="six columns">
+				<p><img src="./images/Marshall costar map.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>About 242 multifamily rental units have been built since 2004, consisting mostly of one and two bedroom units with relatively low rents.</h4>
+			</div>
+			<div class="six columns">
+				<table class="uniform-columns">
+					<tr>
+						<th>Unit size</th>
+						<th>Average rent</th>
+						<th>Of total</th>
+					</tr>
+					<tr>
+						<td>Studio</td>
+						<td>N/A</td>
+						<td>2%</td>
+					</tr>
+					<tr class="important">
+						<td>1 bedroom</td>
+						<td>$891</td>
+						<td>48%</td>
+					</tr>
+					<tr>
+						<td>2 bedrooms</td>
+						<td>$1,486</td>
+						<td>47%</td>
+					</tr>
+					<tr>
+						<td>3+ bedrooms</td>
+						<td>$2,046</td>
+						<td>3%</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="Demand" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/demand-background.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/Demand.svg" class="inline-image" title="Demand"/>
+					</div>
+					<h2 class="inline-text">Demand</h2>
+				</div>
+				<h5>In order to calibrate future housing production to best meet the community's needs, two factors must be established: how many units are needed in total and what is the right mix of unit types and prices. The following section addresses each of these factors to inform recommendations that effectively meet local need and reflect the community's values and priorities.</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Sources of housing demand in Marshall County</h3>
+				
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Marshall County's housing demand orginates from both current and new households.</h4>
+				<p>Based on the analyses contained within the People and Place sections of this report, Marshall County’s housing demand is driven by a number of factors that include both unmet demand among existing residents and new growth among projected and potential future residents. This chart illustrates demand origins on the left and demand drivers on the right.</p>
+				<p>Each demand driver in more detail below followed by an estimated quantification of total demand by income level.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p><img src="./images/Marshall_sankey_demand1.png" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>	
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Attainability gaps</h3>
+				
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>There are not enough low-cost units to meet demand among low-income residents.</h4>
+				<p>The gap analysis compares Marshall County’s distribution of household incomes to its mix of housing options by cost to uncover potential supply shortages at different price points. The analysis identified a shortage of 2,566 units across a range of price points below $1,750 per month.</p>
+				<p>Adding units at these price points would help take pressure off existing residents currently experiencing cost burden.</p>
+			</div>
+			
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Column Chart" id="datawrapper-chart-4GM8Y" src="https://datawrapper.dwcdn.net/4GM8Y/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="376" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Downsizing seniors</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>A growing number of seniors will seek new housing options as they age.</h4>
+				<p>Marshall County’s seniors currently comprises a modest portion of the total population but this share is expected to grow over the next 10 years. Most of these seniors live in relatively large units of 3 or more bedrooms.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<table>
+					<tr>
+						<td>65+ households of 1-2 people in 3+ bedroom units</td>
+						<td>4,880</td>
+					</tr>
+					<tr>
+						<td>Potential annual downsizing rate</td>
+						<td>3%</td>
+					</tr>
+					<tr class="important">
+						<td>Units needed to accommodate downsizers over 10 years</td>
+						<td>1,464</td>
+					</tr>
+				</table>
+				<figcaption>Given changing housing preferences and needs as people age, it is likely a portion of these senior households will explore downsizing options such as a smaller, accessible unit with fewer bedrooms located in a walkable location. If 3% of these households sought new units to downsize into each year, the county would need to add 1,464 units appropriate for seniors over the next 10 years.</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Organic household growth</h3>
+				
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Elkhart County is expected to grow modestly over the next decade.</h4>
+				<p>Recent trends suggests Marshall County should expect to shrink by 644 households over the next 10 years.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Interactive area chart" id="datawrapper-chart-sBvJx" src="https://datawrapper.dwcdn.net/sBvJx/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="381" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<p>To meet the trends extended growth projection, Marshall County would need to add 99 housing units over the next decade. This production target combines demand driven by net household growth (or lack thereof in this case) as well as other factors detailed at right which also contribute to maintaining a suitable housing supply over time.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<table>
+					<tr>
+						<td>Household growth: 0</td>
+						<td>Forecasted from 2024 to 2034.</td>
+					</tr>
+					<tr>
+						<td>Overcrowding adjustment: 0</td>
+						<td>Local rate of 1.7% is below the national average of 3.4%.</td>
+					</tr>
+					<tr>
+						<td>Replacement housing: 99</td>
+						<td>0.05% of the housing stock is replaced annually</td>
+					</tr>
+					<tr>
+						<td>Vacancy adjustment: 0</td>
+						<td>Local rate of 17.2% is above the healthy market minimum of 5%</td>
+					</tr>
+					<tr>
+						<td>Substandard adjustment: 0</td>
+						<td>Local rate of 0.1% is below the national average of 0.4%</td>
+					</tr>
+					<tr class="important">
+						<td>Total units needed: 99</td>
+						<td>To keep up with growth and maintain a healthy housing stock</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Workforce housing</h3>
+				
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>There are more workers than jobs in Marshall County.</h4>
+				<p>Marshall County contains more workers than jobs. About 47% of the people working in Marshall County live in the County as well. While many of the workers who commute into the city simply choose to live somewhere else, a portion of these workers may prefer to live in the County if the right housing options were available. Increasing  the rate of local workforce living in Elkhart County  to 50% by 2034 would require providing 467 additional households.</p>
+				<p>Increasing  the rate of local workforce living in Marshall County to 50% by 2034 would require providing 467 additional households.</p>
+				<p>“Workforce housing” is typically considered affordable to 80-120% AMI, a segment of the population vulnerable to displacement if they cannot find adequate and affordable housing, including police, firefighters, teachers, skilled nurses, and municipal employees.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<table>
+					<tr>
+						<td>Jobs in Marshall County</td>
+						<td>17,422</td>
+					</tr>
+					<tr>
+						<td>Workers that live and work in Marshall County</td>
+						<td>8,244</td>
+					</tr>
+					<tr>
+						<td>Portion of local workforce that also lives in Marshall County</td>
+						<td>47%</td>
+					</tr>
+					<tr>
+						<td>Desired portion by 2034</td>
+						<td>50%</td>
+					</tr>
+					<tr class="important">
+						<td>Additional workforce households (and units) by 2034</td>
+						<td>467</td>
+					</tr>
+				</table>		
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Housing demand by income level</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>There is demand for 26,603 units over the next 10 years.</h4>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<table class="uniform-columns">
+					<tr>
+					  <th>AMI</th>
+					  <th>Total demand <br>(units)</th>
+					</tr>
+					<tr>
+					  <td>&lt;30%</td>
+					  <td>573</td>
+					</tr>
+					<tr>
+					  <td>30-60%</td>
+					  <td>1,484</td>
+					</tr>
+					<tr>
+					  <td>60-80%</td>
+					  <td>617</td>
+					</tr>
+					<tr>
+					  <td>80-100%</td>
+					  <td>386</td>
+					</tr>
+					<tr>
+					  <td>100-120%</td>
+					  <td>162</td>
+					</tr>
+					<tr>
+					  <td>&gt;120%</td>
+					  <td>251</td>
+					</tr>
+						<td></td>
+						<td class="important">3,474</td>
+				</table>
+				<figcaption>The table above summarizes the demand generated by the factors described in this section of the analysis. These figures account for potential overlap between different demand factors to avoid double counting, resulting in a total that might be less than the sum of the factors. For example, many senior households fall into bot attainability gaps and potential downsizer categories.</figcaption>		
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Each source of demand includes a different mix of household incomes.</h4>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p><img src="./images/Marshall_sankey_demand2b.png" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+				<figcaption>The diagram above illustrates how Marshall County’s 10-year housing demand translate into income levels. While this distribution reflects expected demand over the next 10 years, it does not necessarily coincide with the housing production target in the following Results section. Housing for each income level requires a different set of policies, programs, and subsidies to build. In many cases, there simply is not enough capacity to meet the full demand right away.</figcaption>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Calibrating housing parameters to meet demand</h3>
+				<h6>The following summarizes current trends and housing preferences that should be considered when programming and designing housing to best meet demand.</h6>
+				
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Today's general housing preferences</h4>
+				<p>Household structures have changed significantly since much of Marshall County’s housing supply was built. Today, households are smaller, less likely to have one or more children, and more likely to include non-family or multi generational cohabitants. Future development should be designed to reflect the current diversity of household structures and wider range of housing needs and preferences.</p>	
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p class="large">🛌 Smaller units</p>
+				<p>Fewer bedrooms for smaller households.</p>
+				<p class="large">🅿️ Parking optional</p>
+				<p>Enabling a car-free or car-lite lifestyle.</p>
+				<p class="large">🧑🏽 Roommate-ready</p>
+				<p>Accommodating non-family households.</p>
+				<p class="large">🪴 Green building</p>
+				<p>Efficient, low-impact design and systems.</p>
+				<p class="large">👵🏼 Multigenerational</p>
+				<p>Space for adult children or elderly parents.</p>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Workforce housing</h4>
+				<p>“Workforce housing” is typically oriented to middle-income households that often consist of singles, couples, or young families. Jobs typically attributed to this group include public safety officers, educators, municipal employees, skilled nurses, and other occupations that often require some level of higher education and pay wages equating to 80-120% AMI.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p class="large">💰 Moderate cost for families</p>
+				<p>Workforce families can afford units that cost $1,700 - 2,500 per month.</p>
+				<p class="large">💵 Lower cost for singles</p>
+				<p>One-person workforce households cannot afford as much as dual-earner families.</p>
+				<p class="large">🛏️ Fewer bedrooms</p>
+				<p>Workforce-oriented housing should include mostly 0-2 bedroom units.</p>
+				<p class="large">🔨 Well-maintained</p>
+				<p>Workforce can afford rent/mortgage but large capital costs can be destabilizing.</p>
+				<p class="large">📍 Near job centers</p>
+				<p>Households can save money by living close to work and commuting without a car.</p>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Senior housing</h4>
+				<p>“Workforce housing” is typically oriented to middle-income households that often consist of singles, couples, or young families. Jobs typically attributed to this group include public safety officers, educators, municipal employees, skilled nurses, and other occupations that often require some level of higher education and pay wages equating to 80-120% AMI.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p class="large">👨‍👩‍👧 Universal design</p>
+				<p>Accommodating to people with limited mobility.</p>
+				<p class="large">🧹 Low maintenance</p>
+				<p>Less space and less work to keep up.</p>
+				<p class="large">💲 Energy efficient</p>
+				<p>Lower utility costs affordable on fixed income.</p>
+				<p class="large">♿ Accessible</p>
+				<p>Single-level with ADA-compliant doors, baths, etc.</p>
+				<p class="large">🤗 Social</p>
+				<p>Designed and located to promote an active community life.</p>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Downtown living</h4>
+				<p>Recent years have seen growing demand for housing in walkable, downtown or compact neighborhood environments. This can include both dense urban places as well as small town downtowns. Increasingly, the most desirable and competitive housing markets are those with access to the qualities and amenities of a downtown environment within walking distance.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p class="large">🚶🏼 Walkability</p>
+				<p>More daily needs and wants accessible on foot.</p>
+				<p class="large">🚌 Transit</p>
+				<p>Close to bus lines and train connections.</p>
+				<p class="large">🏪 Amenities</p>
+				<p>Near restaurants, shops, and cultural destinations.</p>
+				<p class="large">🏥 Services</p>
+				<p>Access to health and community services without a car.</p>
+				<p class="large">🏘️️ Activity</p>
+				<p>Located in a lively and vibrant neighborhood.</p>
+			</div>
+		</div>
+
+		<div class="row insight">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Homeownership</h4>
+				<p>Marshall County has a higher rate of homeownership than the rest of the state and the national average. While it is important to maintain a significant rental housing supply to provide options for people not interested in or ready to buy, a majority of people prefer homeownership for at least certain periods of their lives, such as starting and raising a family.</p>
+				<p>Adding more rental units to bring the housing supply closer to the state and national averages would improve the balance of housing options across the county.</p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<iframe title="" aria-label="Stacked Columns" id="datawrapper-chart-ZMUmn" src="https://datawrapper.dwcdn.net/ZMUmn/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="364" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+				</script>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="Results" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/results-background.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/Results.svg" class="inline-image" title="Results"/>
+					</div>
+					<h2 class="inline-text">Results</h2>
+				</div>
+				<h5>The following summarizes the plan's recommended housing production target for Marshall County. The cost and unit mix is informed by the analysis summarized above as well as an evaluation of local development capacity and available funding sources and subsidies.</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelve columns" style="margin-top: 2%">
+				<h3>10-year housing production target</h3>
+				<h6>Production target by tenure, bedroom count and cost.</h6>
+			</div>
+		</div>
+		
+		<div class="row insight-box">
+			<div class="row">
+				<div class="twelve columns" style="margin-top: 2%">
+					<p><img src="./images/Marshall production table.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+				</div>
+			</div>
+			<div class="four columns" style="margin-top: 2%">
+				<p>The table above and chart at right translate Marhsall County’s 10-year production target into a unit mix by cost, bedroom count, and tenure (rent/own). The table below converts monthly cost into approximate purchase price and rent after accounting for other housing costs like utilities and taxes.</p>
+				<p><img src="./images/Marshall cost table.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+			</div>
+			<div class="eight columns" style="margin-top: 2%">
+				<p><img src="./images/Marshall production chart.PNG" height=auto width=100% title="CommunityScale" alt="CommunityScale"></a></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="unresponsive" style="margin-bottom: 30px;">
+				<a href="https://www.macog.com/" target="_blank"><img src="./images/client/client-logo.png" height="auto" width="30px" title="MACOG" alt="MACOG"></a>
+				<div class="fill-space">
+					<p class=""><a href="https://www.macog.com/" target="_blank">The Michiana Area Council of Governments (MACOG)</a> is a voluntary organization of local governments that studies and attempts to resolve areas of interlocal issues.</p>
+				</div>
+			</div>
+	
+			<div class="unresponsive">
+				<a href="http://communityscale.io"><img src="./images/CommunityScale-logo.png" height="auto" width="30px" title="CommunityScale" alt="CommunityScale"></a>
+				<div class="fill-space">
+					<p class=""><a href="http://communityscale.io">CommunityScale</a> is a pioneering urban planning and spatial data analysis company serving clients across the United States. <br> Follow CommunityScale on <a href="https://www.linkedin.com/company/communityscale">LinkedIn</a> and <a href="https://twitter.com/CommunityScale">Twitter/X</a> <br>This dashboard is <a href="https://github.com/CommunityScale/FRCOG">open source</a> MIT license - 2024 CommunityScale</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="nav-javascript.js"></script>
+
+	<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

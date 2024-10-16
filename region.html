@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H13EFXBPKL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H13EFXBPKL');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WJ5WD2NX');</script>
+<!-- End Google Tag Manager -->
+
+	<!-- Metadata 2024 -->
+	<meta charset="utf-8">
+	<title>Regional Housing Needs Assessment</title>
+	<meta name="description" content="Explore our interactive dashboard to understand housing needs in MACOG. This tool provides insights into housing availability, affordability, and trends.">
+	<meta name="keywords" content="MACOG, Housing, Urban Planning, CommunityScale, Assessment, Dashboard">
+	<meta name="author" content="CommunityScale">
+	<link rel="canonical" href="https://communityscale.github.io/MACOG/">
+	<meta property="og:title" content="MACOG Housing Study Dashboard">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://communityscale.github.io/MACOG/">
+	<meta property="og:image" content="https://raw.githubusercontent.com/CommunityScale/MACOG/main/images/socialcard.jpg">
+	<meta property="og:description" content="Housing Study educational dashboard for MACOG. Provides detailed analysis and insights on housing trends, affordability, and needs.">
+	<meta property="og:site_name" content="CommunityScale">
+	<meta property="og:locale" content="en_US">
+	<meta property="article:author" content="CommunityScale">
+	<meta property="article:tag" content="Urban Planning">
+	<meta property="article:tag" content="Housing">
+	<meta property="article:tag" content="MACOG">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="MACOG Housing Study Dashboard">
+	<meta name="twitter:description" content="Interactive dashboard providing insights into MACOG's housing needs. Explore data on affordability, availability, and trends.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/CommunityScale/MACOG/main/images/socialcard.jpg">
+	<meta name="twitter:creator" content="@CommunityScale">
+	<meta http-equiv="content-language" content="en">
+
+	<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/cs-template.css">
+
+	<!-- Fonts / icons
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/ed8ea386c8.js" crossorigin="anonymous"></script>
+
+	<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJ5WD2NX"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+	<div class="sticky">
+		<div class="topnav">
+			<div class="logo-and-menu">
+				<p class="inline-text">
+					<img src="images/client/client-logo.png" alt="MACOG" class="inline-logo">
+					<span class="title">Regional HNA</span>
+				</p>
+				<div class="nav-options">
+					<div class="desktop-pages">
+						<!-- Links must be added here for desktop -->
+						<a href="#Overview"><span class="fa fa-arrow-up"></span> Back to top</a>
+						<a href="#Findings">Production targets</a>
+						<a href="#Perspectives">Housing perspectives</a>
+						<a href="http://communityscale.github.io/MACOG/index.html" target="_blank"><span class="fa fa-external-link"></span> Regional Dashboard</a>
+					</div>
+					<div id="clickDiv" class="mobile-menu-icon">
+						<a class="menu-icon">
+							<i class="fa fa-bars"></i>
+						  </a>
+					</div>
+				</div>
+				
+			</div>
+			<div id="targetDiv" class="">
+				<!-- Links must be added here again for mobile -->
+				<a href="#Overview"><span class="fa fa-arrow-up"></span> Back to top</a>
+				<a href="#People">People</a>
+				<a href="#Place">Place</a>
+				<a href="#Demand">Demand</a>
+				<a href="#Results">Results</a>
+				<a href="http://communityscale.github.io/MACOG/index.html" target="_blank"><span class="fa fa-external-link"></span> Regional Dashboard</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cover banner -->
+
+	<div class="cover" id="Overview" style="background:linear-gradient(to right,rgba(56,63,69,0.9),rgba(138, 121, 70, 0.75)), url(images/client/cover-image-elkhart.jpg);">
+		<div class="container" style="margin-top: 0">
+			<h1>Region-wide
+				<br>Housing Needs Assessment
+			</h1>
+			<div class="row">
+				<div class="eight columns" style="margin-top: 20px">
+					<p>This dashboard was created by <a href="http://communityscale.io">CommunityScale</a> for <a href="https://www.macog.com/">MACOG</a> (Michiana Area Council of Governments) to summarize the Housing Needs Assessment for the region as prepared to support MACOG's overall <a href="http://communityscale.io/MACOG/index.html">Regional Housing Study</a>.</p>
+					<div class="chip-container">
+						<a href="#Findings"><button  class="button-primary">Regional production targets</button></a>
+						<a href="#Perspectives"><button  class="button-primary">Regional housing perspectives</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header row -->
+	<div class="container">
+		<div class="row">
+			<div class="six columns" style="margin-top: 2%">
+				<h4>Region-wide Housing Needs Assessment</h4>
+				<p>A foundational component of MACOG's Regional Housing Plan, this Housing Needs Assessment is the result of extensive quantitative data analysis and stakeholder engagement to understand housing needs and opportunties at the regional scale.</p>
+				<p>This Housing Needs Assessment document is also availble in a more detailed, downloadable pdf format: [fix link]</p>
+				<p><a href="./docs/Regional Housing Study_ Elkhart HNA (DRAFT).pdf" target="blank"><button><span class="fa fa-file-text-o"></span> Read the full report</button></a></p>
+			</div>
+			<div class="six columns" style="margin-top: 2%">
+				<p><img src="./images/client/cover-image-elkhart.jpg" height="auto" width="100%" title="CommunityScale" alt="CommunityScale"></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="Findings" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/results-background-marshall.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/Place.svg" class="inline-image" title="People">
+					</div>
+					<h2 class="inline-text">Regional production targets</h2>
+				</div>
+					<h5>The Regional Housing Study includes in-depth analysis of housing conditions, needs, and demand for each county. Each of these Housing Needs Assessment reports includes detailed study of the county's households, housing supply, and market conditions to derive local housing need and demand intended to inform housing production targets at local, county, and regional levels.</h5>
+					<div class="chip-container">
+						<a href="#Sources"><button  class="button-primary">Sources of demand</button></a>
+						<a href="#Demand"><button  class="button-primary">Total demand</button></a>
+						<a href="#Targets"><button  class="button-primary">10-year production target</button></a>
+						<a href="#Prices"><button  class="button-primary">Target price points</button></a>
+					</div>
+				</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row insight-box" id="Sources">
+			<div class="twelve columns">
+				<h4>The sources of regional housing demand</h4>
+				<p>The Housing Needs Assessment measures housing demand as derived from these sources:</p>
+				<ul>
+					<li><b>Attainability gaps:</b> Affordable units needed to balance the costs of housing with households’ ability to pay across income levels and price points.</li>
+					<li><b>Organic growth:</b> Units needed to accommodate projected net new households.</li>
+					<li><b>Essential workforce:</b> Units needed to house middle-income workers, typically 80-120% AMI.</li>
+					<li><b>Potential downsizers:</b> Units that accommodate the needs and preferences of empty nesters and seniors looking for smaller housing options.</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<table class="uniform-columns">
+						<tr>
+						  <th>Demand driver</th>
+						  <th>Total demand (units)</th>
+						</tr>
+						<tr>
+						  <td>Attainability gaps</td>
+						  <td>34,080 - 42,590</td>
+						</tr>
+						<tr>
+						  <td>Organic growth</td>
+						  <td>8,010 - 10,020</td>
+						</tr>
+						<tr>
+						  <td>Essential workforce</td>
+						  <td>7,220 - 9,020</td>
+						</tr>
+						<tr>
+						  <td>Potential downsizers</td>
+						  <td>10,410 - 13,010</td>
+						</tr>
+						<tr>
+						  <th>Total</th>
+						  <th>59,710 - 74,640</th>
+						</tr>
+					</table>
+				</div>
+				<div class="six columns">
+					<p><img src="images/MACOG regional demand by driver.png" height="auto" width="100%" title="CommunityScale" alt="CommunityScale"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row insight-box" id="Demand">
+			<div class="twelve columns" style="margin-top: 2%">
+				<h4>Regional demand by income based on what is needed: 59,710 - 74,640 units total</h4>
+				<p>Most of the region’s housing demand is driven by low-income households, especially those unable to find affordable housing under current circumstances. There is also significant demand at the higher end of the income spectrum. About one third of demand is driven by households earning between 60-120% AMI.</p>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<table class="uniform-columns">
+						<tr>
+						  <th>Income (AMI)</th>
+						  <th>Total demand (units)</th>
+						</tr>
+						<tr>
+						  <td>&lt;30%</td>
+						  <td>20,000 - 24,990</td>
+						</tr>
+						<tr>
+						  <td>30-60%</td>
+						  <td>15,590 - 19,490</td>
+						</tr>
+						<tr>
+						  <td>60-80%</td>
+						  <td>3,550 - 4,440</td>
+						</tr>
+						<tr>
+						  <td>80-100%</td>
+						  <td>7,080 - 8,850</td>
+						</tr>
+						<tr>
+						  <td>100-120%</td>
+						  <td>3,880 - 4,860</td>
+						</tr>
+						<tr>
+						  <td>&gt;120%</td>
+						  <td>9,610 - 12,010</td>
+						</tr>
+						<tr>
+						  <th>Total</th>
+						  <th>59,710 - 74,640</th>
+						</tr>
+					</table>
+				</div>
+				<div class="six columns">
+					<p><img src="images/MACOG regional demand by income.png"  height="auto" width="100%" title="CommunityScale" alt="CommunityScale"></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row insight-box" id="Targets">
+			<div class="twelve columns" style="margin-top: 2%">
+				<h4>Production target by income based on what is feasible: 13,440 - 16,800 units over the next 10 years</h4>
+				<p>Regardless of overall need or demand, only a limited number of units can realistically be built each year. The housing production target summarized at right combines the demand analysis with estimates of the practical limits of applicable subsidy programs (i.e. how many units each program typically supports each year) and development industry capacity (i.e. how many units developers have collectively proven able to produce each year) for quantities that are ambitious but also achievable.</p>
+				<p>In spite of these practical constraints, accelerated housing production is possible with strong leadership, political will, increased resources, and community support. This production target should be considered a goal that is meant to be exceeded.</p>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<table class="uniform-columns">
+						<tr>
+						<th>Income (AMI)</th>
+						<th>Production target (units)</th>
+						</tr>
+						<tr>
+						<td>&lt;30%</td>
+						<td>480 - 600</td>
+						</tr>
+						<tr>
+						<td>30-60%</td>
+						<td>1,070 - 1,340</td>
+						</tr>
+						<tr>
+						<td>60-80%</td>
+						<td>600 - 750</td>
+						</tr>
+						<tr>
+						<td>80-100%</td>
+						<td>600 - 750</td>
+						</tr>
+						<tr>
+						<td>100-120%</td>
+						<td>3,090 - 3,860</td>
+						</tr>
+						<tr>
+						<td>&gt;120%</td>
+						<td>7,600 - 9,500</td>
+						</tr>
+						<tr>
+						<th>Total</th>
+						<th>13,440 - 16,800</th>
+						</tr>
+					</table>
+				</div>
+				<div class="six columns">
+					<p><img src="images/MACOG regional 10-year production target.png"  height="auto" width="100%" title="CommunityScale" alt="CommunityScale"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row insight-box" id="Prices">
+			<div class="twelve columns" style="margin-top: 2%">
+				<h4>Translating production targets into price points</h4>
+				<p>The table below translates the housing production target into units by overall monthly cost and approximate purchase price and lease rent these costs correspond with.</p>
+				<p>Monthly costs represent the maximum range households at each income level can spend on housing without becoming cost burdened (i.e. spending over 30% of their income on housing). These costs include both mortgage/rent as well as utilities, taxes, insurance and other fundamental housing expenses.</p>
+				<p>The affordable purchase price and lease rent represent the buying power each monthly cost level represents.</p>	
+				<table>
+					<tr>
+					  <th>Income (AMI)</th>
+					  <th>Production target (units)</th>
+					  <th>Affordable monthly cost</th>
+					  <th>Affordable purchase price</th>
+					  <th>Affordable lease rent (per month)</th>
+					</tr>
+					<tr>
+					  <td>&lt;30%</td>
+					  <td>480 - 600</td>
+					  <td>$520 - $640</td>
+					  <td>$43,340 - $52,970</td>
+					  <td>$410 - $510</td>
+					</tr>
+					<tr>
+					  <td>30-60%</td>
+					  <td>1,070 - 1,340</td>
+					  <td>$1,040 - $1,280</td>
+					  <td>$103,490 - $126,490</td>
+					  <td>$920 - $1,120</td>
+					</tr>
+					<tr>
+					  <td>60-80%</td>
+					  <td>600 - 750</td>
+					  <td>$1,400 - $1,710</td>
+					  <td>$143,600 - $175,520</td>
+					  <td>$1,250 - $1,530</td>
+					</tr>
+					<tr>
+					  <td>80-100%</td>
+					  <td>600 - 750</td>
+					  <td>$1,750 - $2,130</td>
+					  <td>$183,710 - $224,530</td>
+					  <td>$1,590 - $1,950</td>
+					</tr>
+					<tr>
+					  <td>100-120%</td>
+					  <td>3,090 - 3,860</td>
+					  <td>$2,100 - $2,560</td>
+					  <td>$223,700 - $273,420</td>
+					  <td>$1,930 - $2,350</td>
+					</tr>
+					<tr>
+					  <td class="important">Total</td>
+					  <td class="important">13,440 - 16,800</td>
+					  <td></td>
+					  <td></td>
+					  <td></td>
+					</tr>
+				</table>			
+			</div>
+		</div>
+	</div>
+
+	<div class="divider" id="" style="background:linear-gradient(to right,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.8)), url(images/theme/demand-background-stjoseph.jpg); background-repeat: no-repeat; background-size: cover">
+		<div class="container">
+			<div class="twelve columns center-align">
+				<div class="divider-header">
+					<div class="divider-icon">
+						<img src="images/theme/Place.svg" class="inline-image" title="People">
+					</div>
+					<h2 class="inline-text">Regional Housing Perspectives</h2>
+				</div>
+				<h5>Some topics in the housing discourse cannot be fully addressed at the county-by-county scale and require a regional perspective to understand and respond to. The following provide regional context for aspects of the Housing Needs Assessments linked above and also inform strategies that can only be effective when stretching across jurisdictions and counties.</h5>
+				<div class="chip-container">
+					<a href="#Growth"><button class="button-primary">Growth</button></a>
+					<a href="#Wages"><button class="button-primary">Wages</button></a>
+					<a href="#Subsidy"><button class="button-primary">Subsidy</button></a>
+					<a href="#Migration"><button class="button-primary">Migration</button></a>
+					<a href="#Barriers"><button class="button-primary">Development barriers</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row" id="Growth">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Employment growth and household growth</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Recent and projected region-wide jobs and household growth</h4>
+				<p>Two major employers recently announced plans to open facilities in the Indiana Enterprise Center in northwest St. Joseph County which are projected to create up to 2,700 jobs: Amazon data center (1,000 jobs); GM EV battery plan (1,700 jobs)</p>
+				<p>At a rate of 0.7 households per job (the prevailing jobs-to-households ratio), these two employers could add nearly 1,900 new households to the region, likely mostly concentrated in St. Joseph County but with some impact in Marshall and Elkhart Counties as well. However, it is also possible an outsized portion of these jobs will be filled by existing residents either shifting from other, less desirable jobs or re-entering the workforce after temporary disengagement.</p>
+			</div>
+			<div class="six columns">
+				<p><img src="images/MACOG employment.png"  height="auto" width="100%" title="CommunityScale" alt="CommunityScale"></p>
+			</div>
+		</div>
+		<div class="row" id="Wages">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Wages and ability to pay for housing</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Median wages by occupation and ability to pay for housing</h4>
+				<p>Employment and wages are a direct determinant of a household’s ability to pay for housing. The table at right summarizes median wages (annual and hourly) for typical occupations in the region. These earnings are translated into AMI as well as the amount this income can afford in rent or to purchase a home without cost burden.</p>
+				<p>Given these are median wages, it should be assumed there are subsets of people earning more and less than these figures.</p>
+				<p>52% of households in the region include multiple earners such that their household income reflects combinations of these wages. For example, a household with a median-wage manager and a median-wage firefighter would earn 126% AMI.</p>
+			</div>
+			<div class="six columns">
+				<p><img src="images/MACOG occupations.PNG"  height="auto" width="100%" title="CommunityScale" alt="CommunityScale"></p>
+			</div>
+		</div>
+		<div class="row" id="Subsidy">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Low Income Housing Tax Credit supply</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>The region’s recent and projected supply of LIHTC-funded affordable housing units</h4>
+				<p>Low Income Housing Tax Credits (LIHTC) represent one of the most prevalent and effective tools with which to deliver housing affordable to households earning 60% AMI and below. In many communities across the country, there are very few financing alternatives outside this program to provide this level of affordability.</p>
+				<p>The LIHTC supply is limited and its allocation is competitive on a state-by-state basis. The graph at right tracks LIHTC-funded units over the past 15 years and projects likely supply through 2040. The region’s ability to deliver new housing at 60% AMI and below will be largely dependent on how well local developers and their partner municipalities and stakeholders can compete for an outsized share of Indiana’s LIHTC allocation.</p>
+			</div>
+			<div class="six columns">
+				<p><img src="images/MACOG LIHTC.PNG"  height="auto" width="100%" title="CommunityScale" alt="CommunityScale"></p>
+			</div>
+		</div>
+		<div class="row" id="Migration">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Migration across state lines</h3>
+			</div>
+		</div>
+		<div class="row insight">
+			<div class="six columns">
+				<h4>Inter-state migration between MACOG and southern Michigan counties</h4>
+				<p>As the region’s growth extends into Michigan, there are concerns about losing population and investment out of state.</p>
+				<p>Migration trends over the past several years suggest a small degree of net out-migration from St. Joseph and Elkhart Counties to Michigan, an average of 65 households per year. However, the flows are not evenly distributed between Michigan counties. While the region nets an average annual loss of about 125 households to Cass County, MI, the region nets an average annual gain of about 60 households from Barrien County, MI.</p>
+				<p>Overall, net out-migration to Michigan does not seem to be a significant problem for the region at present but monitoring these trends is worthwhile in case this changes in the future.</p>
+			</div>
+			<div class="six columns">
+				<p><img src="images/MACOG migration.PNG"  height="auto" width="100%" title="CommunityScale" alt="CommunityScale"></p>
+			</div>
+		</div>
+		<div class="row" id="Barriers">
+			<div class="twelve columns center-align" style="margin-top: 2%">
+				<h3>Project-scale barriers</h3>
+				<h6>The following barriers impact developers’ ability to deliver new housing development in the region:</h6>
+			</div>
+		</div>
+		<div class="row insight-box">
+			<div class="row">
+				<div class="six columns">
+					<h4>Development costs</h4>
+					<p>Especially since the pandemic’s onset, several fundamental development costs have increased substantially, making it more difficult to finance and build housing within price ranges that most can afford. For example, interest rates drive up the cost of construction and permanent loans that typically underwrite the bulk of a development’s budget. Construction materials and labor costs have also risen sharply, adding costs to development projects that can only be passed on to tenants and buyers to a point before becoming too expensive to compete in the market.</p>
+				</div>
+				<div class="six columns">
+					<h4>Infrastructure limitations and costs</h4>
+					<p>While most community’s central plants have sufficient capacity to support growth, local sewer and water distribution is often limited to areas that have already been largely built out and extending to new redevelopment districts can be very costly. Though all sides acknowledge sewer and water connections are central to unlocking new development opportunities, there is not always agreement about who can or should fund and implement the needed system extensions. Municipalities and utilities may lack the capital on hand and developers may not be able to justify the expense without compromising a project’s financial feasibility.</p>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<h4>Labor shortage</h4>
+					<p>Many developers have reported a lack of construction labor that impedes their ability to meet production goals and keep up with the opportunities in front of them. This includes both licensed and unlicensed trades. For the tradespeople that are available, their costs may be elevated and scheduling difficult given the high demand for their time and skills.</p>
+				</div>
+				<div class="six columns">
+					<h4>Public debate</h4>
+					<p>From an analytical perspective, all communities in the region are experiencing some degree of housing shortage or under production relative to local need and projected demand. However, local leaders and residents may not be fully informed and/or on the same page regarding the extent of this challenge or the steps necessary to address it. For example, some may be concerned about the impacts of new development, higher density, rental housing, and other changes on the capacity of local services or the character of the local community despite a general desire for more housing. Resistance to change, disagreement about the nature of the problem, and conflict over the steps to address it can slow or prevent solutions from developing or taking effect.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<h4>Zoning and regulations</h4>
+					<p>Most of the region’s housing was built years or decades ago under different market conditions than exist today. For example, zoning in many neighborhoods reflects a legacy of large homes suitable for families with children on relatively large lots. However, current trends see households shrinking and preferences shifting toward smaller units near amenities and downtowns. The minimum lot sizes, building square footages, and other massing and density parameters in force by local zoning does not always align with the housing typologies and land use patterns today’s households would prefer - especially smaller units on compact lots that would more likely be affordable to middle class households and seniors.</p>
+				</div>
+				<div class="six columns">
+					<h4>Infill challenges</h4>
+					<p>Vacant, abandoned, and derelict (VAD) properties are a significant driver of blight and devaluation in many neighborhoods, especially (but not exclusively) in the region’s larger cities. Infill development refers to the process of converting VAD and other underutilized properties into new, quality housing, often with affordability protections. Despite the large number of VAD parcels, there are several hurdles to transforming these sites. For example, significant resources are required to inventory, acquire, remediate, and reposition these sites. Developers have trouble financing small, individual projects (especially when opportunities exist elsewhere for larger, more efficient and profitable projects). Financing resources such as trust funds and land banks and are not widespread.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer" style="background:linear-gradient(to right,rgba(56,63,69,0.9),rgba(138, 121, 70, 0.75)), url(images/client/cover-image-elkhart.jpg);">
+		<div class="container">
+			<div class="unresponsive"  style="margin-bottom: 30px;">
+				<div class="content-size"><a href="https://www.macog.com/" target="_blank"><img src="./images/client/client-logo.png" height="auto" width="30px" title="FRCOG" alt="FRCOG"></a></div>
+				<div class="fill-space">
+					<p class=""><a href="https://www.macog.com/" target="_blank">The Michiana Area Council of Governments (MACOG)</a> is a voluntary organization of local governments that studies and attempts to resolve areas of interlocal issues.</p>
+				</div>
+			</div>
+	
+			<div class="unresponsive">
+				<div class="content-size"><a href="http://communityscale.io"><img src="./images/CommunityScale-logo.png" height="auto" width="30px" title="CommunityScale" alt="CommunityScale"></a></div>
+				<div class="fill-space">
+					<p class=""><a href="http://communityscale.io">CommunityScale</a> is a pioneering urban planning and spatial data analysis company serving clients across the United States. Follow CommunityScale on <a href="https://www.linkedin.com/company/communityscale">LinkedIn</a> and <a href="https://twitter.com/CommunityScale">Twitter/X</a>. This dashboard is <a href="https://github.com/CommunityScale/">open source</a> MIT license - 2024 CommunityScale</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="nav-javascript.js"></script>
+
+	<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

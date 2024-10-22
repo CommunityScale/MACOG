@@ -643,6 +643,11 @@ p.large-emoji {
   line-height: 1;
 }
 
+p.medium {
+  font-size: 1.5rem;
+  margin-bottom: .25rem;
+}
+
 /* Larger than phablet  */
 @media (max-width: 750px) {
 
